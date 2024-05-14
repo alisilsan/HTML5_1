@@ -1,0 +1,155 @@
+* {
+  background-color: rgb(248, 203, 118);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#title > header {
+  text-align: center;
+}
+
+#title {
+  margin: 10px auto;
+  width: 1000px;
+  display: flex;
+}
+
+#example {
+  margin: 10px 10px;
+  width: 300px;
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#item1 {
+  margin: 10px 10px;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  font-size: 200%;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+#item2 {
+  margin: 10px 10px;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  font-size: 200%;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+#item3 {
+  margin: 10px 10px;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  font-size: 200%;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+#item4 {
+  margin: 10px 10px;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  font-size: 200%;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+#start-box {
+  text-align: center;
+  display: none;
+}
+
+#title-page {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  padding: 100px 100px;
+  background-color: rgb(193, 237, 254);
+  text-align: center;
+}
+
+#start-box > button {
+  background-color: #eee;
+  border: 10px;
+  padding: 20px 40px;
+  margin: 20px auto;
+  cursor: pointer;
+  display: block;
+}
+
+#question-box {
+  display: none;
+  text-align: center;
+  margin: 20px;
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.answer-options {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.answer-options button  {
+  background-color: #eee;
+  border: 10px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  cursor: pointer;
+  display: block;
+
+}
+
+.answer-options button:hover  {
+  transform: scale(1.1);
+}
+
+#answerButton {
+  background-color: #eee;
+  border: 10px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  cursor: pointer;
+  display: block;
+}
+
+
+#result-box {
+  display: none;
+  text-align: center;
+  margin-top: 300px;
+}
+
+#result-box > button {
+  background-color: #eee;
+  border: 10px;
+  padding: 20px 40px;
+  margin: 20px auto;
+  cursor: pointer;
+  display: block;
+}
+
+#result {
+  font-size: 50px;
+}

@@ -1,0 +1,54 @@
+
+#tournamentStart-container {
+    display: none;
+}
+
+h2 {
+    color: #333;
+  }
+
+#tournamentQuestion-container, #tournamentResult-container {
+    text-align: center;
+    margin-top: 50px;
+    display: none;
+}
+
+#title-page {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    padding: 100px 100px;
+    background-color: rgb(193, 237, 254);
+    text-align: center;
+}
+
+#tournamentStartButton {
+    background-color: #eee;
+    border: 10px;
+    padding: 20px 40px;
+    margin: 20px auto;
+    cursor: pointer;
+    display: block;
+  }
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+#personality {
+    font-size: 50px;
+  }
