@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20vh;
+    position: relative; /* fortune-info가 container 내에 위치하도록 함 */
+}
+
+#fortune-cookie {
+    width: 1500px;
+    height: 1000px;
+    cursor: pointer;
+}
+
+.infocontainer {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    z-index: 999; /* fortune-info를 최상위로 표시 */
+}
+.fortune-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+    cursor: pointer;
+}
+
+.fortune-info {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-size: 300%;
+}
+
+.fortuneSecondimage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.randomFortune {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.restart-button {
+    position: fixed;
+    top: calc(50% + 500px); /* fortuneSecondimage 아래에 위치하도록 설정 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 200px;
+    padding: 10px 20px;
+    font-size: 200%;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: black;
+    cursor: pointer;
+    z-index: 1000; /* restart-button을 fortuneSecondimage 위에 표시 */
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

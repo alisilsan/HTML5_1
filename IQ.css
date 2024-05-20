@@ -1,0 +1,71 @@
+* body {
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+/*설문지 질문*/
+.문제{
+    font-size: 30px;
+    margin: 20px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+/*5지선다 박스 속성*/
+.선택 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 1000px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(214, 212, 212);
+    padding: 20px;
+    margin: 20px auto;
+    text-align: left;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+/* 5지선다 */
+.선택 li{
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+}
+/* 라디오 버튼과 글씨 간격 */
+label{
+    padding-left: 10px;
+}
+/* 페이지 아래 있어도 되고 없어도 되는 부분*/
+footer{
+    font-size: 10px;
+    background-color: gray;
+}
+
+#timer {
+    position: relative;
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+    color: red;
+}
+
+#result {
+    text-align: center;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 1000px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(214, 212, 212);
+    padding: 20px;
+    margin: 20px auto;
+    position: relative;
+    right: 0;
+    top: 0;
+}
