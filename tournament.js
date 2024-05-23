@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // 리플로우 트리거
             fullscreenImage.offsetWidth;
 
-            fullscreenImage.style.transform = "translate(-50%, -50%) scale(10)";
+            fullscreenImage.style.transform = "translate(-50%, -50%) scale(4)";
             
             // 일정 시간 후에 전체 화면 이미지 제거하고 성격 결과 표시
             setTimeout(() => {
