@@ -47,8 +47,7 @@
 }
 
 .fortuneSecondimage {
-    width: 900px;
-    height: 600px;
+    transform: translate(10%, -25%);
  /* #fortune-cookie와 같은 위치로 이동 */
 }
 
