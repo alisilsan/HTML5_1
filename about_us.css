@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+article {
+    border: 1px solid gray;
+    border-radius : 10px;
+    width : 1020px;
+    margin: 0 auto;
+}
+table {
+    border-radius: 10px;
+    margin: 0 auto; 
+    text-align: center;
+    background-color: #ccc;
+}
+h1, h3, td, th {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#header{
+    width:100%;
+    height:200px;
+    /* background-color: aquamarine; */
+}
+#header>#logo{
+    float:left;
+    width:400px;
+    height:200px;
+    background-color: burlywood;
+}
+#nav{
+    float:left;
+    width:calc(100% - 400px);
+    height:200px;
+    background-color: cadetblue;
+}
+#slide{
+    width:100%;
+    height:100%;
+    background-color: antiquewhite;
+}
+#footer{
+    width:100%;
+    height:100px;
+    background-color: brown;
+}
+#footer>#logo{
+    float:left;
+    width:400px;
+    height:100px;
+    background-color: rgb(127, 127, 173);
+}
+#copyright{
+    float:left;
+    width:calc(100% - 400px);
+    height:100px;
+    background-color: darkcyan;
+}
