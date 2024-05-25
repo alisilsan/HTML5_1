@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Swiper demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="information.css">
+        <!-- Demo styles -->
+        <style>
+           
+        </style>
+    </head>
+
+    <body>
+        <!--모달 팝업-->
+        <div class="modal modal1">
+            <div class="modal_popup">
+                <div>모달 내부 내용</div>
+            </div>
+        </div>
+        <div class="modal modal2">
+            <div class="modal_popup">
+                <div>모달 내부 내용</div>
+            </div>
+        </div>
+        <div class="modal modal3">
+            <div class="modal_popup">
+                <div>모달 내부 내용</div>
+            </div>
+        </div>
+        <div class="modal modal4">
+            <div class="modal_popup">
+                <div>모달 내부 내용</div>
+            </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/thumbnail1.jpg" class="modal_btn" data-modal="modal1" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/thumbnail2.jpg" class="modal_btn" data-modal="modal2" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/thumbnail3.jpg" class="modal_btn" data-modal="modal3" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/thumbnail4.jpg" class="modal_btn" data-modal="modal4" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/thumbnail1.jpg" class="modal_btn" data-modal="modal1" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/thumbnail2.jpg" class="modal_btn" data-modal="modal2" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/thumbnail3.jpg" class="modal_btn" data-modal="modal3" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/thumbnail4.jpg" class="modal_btn" data-modal="modal4" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                direction: "vertical",
+                mousewheel: true,
+                loop: true,
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+
+        <!-- Modal JS -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const modalButtons = document.querySelectorAll(".modal_btn");
+                const modals = document.querySelectorAll(".modal");
+                const closeButtons = document.querySelectorAll(".close_btn");
+
+                // 각 이미지를 클릭했을 때 해당 모달 열기
+                modalButtons.forEach((button) => {
+                    button.addEventListener("click", function () {
+                        const modal = document.querySelector(`.${button.dataset.modal}`);
+                        modal.classList.add("on");
+                    });
+                });
+
+                // 각 모달의 닫기 버튼을 클릭했을 때 모달 닫기
+                closeButtons.forEach((button) => {
+                    button.addEventListener("click", function (e) {
+                        e.stopPropagation(); // 이벤트 전파 방지
+                        const modal = button.closest(".modal");
+                        modal.classList.remove("on");
+                    });
+                });
+
+                // 모달 배경을 클릭했을 때 모달 닫기
+                modals.forEach((modal) => {
+                    modal.addEventListener("click", function (e) {
+                        if (e.target === modal) {
+                            modal.classList.remove("on");
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

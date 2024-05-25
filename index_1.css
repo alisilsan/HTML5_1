@@ -1,0 +1,29 @@
+.swiper {
+    width: 500px;
+    height: 500px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;   
+}
+/*메인 화면 css*/
+.bigtitle {
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 10px;
+    width : 1050px;
+    height : 2750px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#MainPage, #ALL {
+    text-align: center;
+    color : black;
+}
