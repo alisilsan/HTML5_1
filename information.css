@@ -4,7 +4,7 @@ body {
     height: 100%;
 }
 body {
-    background: #eee;
+    background-image: url("./img/background3.png");
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
