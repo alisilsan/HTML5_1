@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
 /* 배경 이미지와 투명도 변수 정의 */
 :root{
-  --background-image: url(./img/mbti배경.jpeg);
+  --background-image: url(./img/mbti배경.png);
   --background-opacity: 0.3;
 }
 
