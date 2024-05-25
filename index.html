@@ -1,109 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <!-- Demo styles -->
-  <style>
-    html,
-    body {
-      text-align: center;
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    footer{
-    font-size: 10px;
-    background-color: gray;
-    }
-
-    .swiper {            /*큐브 크기 및 위치*/
-      width: 500px;
-      height: 500px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      margin-left: -250px;
-      margin-top: -250px;
-    }
-
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-    }
-  </style>
+    <link rel="stylesheet" href="topbar.css"> <!--메뉴 바 CSS-->
+    <link rel="stylesheet" href="movetopbtn.css"> <!--상단으로 이동 버튼 CSS-->
+    <link rel="stylesheet" href="index_1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>메인페이지 초안</title>
 </head>
-
 <body>
-  <h1>심리테스트 사이트(가칭)</h1>
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <a href="mbti.html">
-          <img src="./img/thumbnail1.jpg" alt="mbti">
-        </a>
-      </div>
-      <div class="swiper-slide">
-        <a href="tournament.html">
-          <img src="./img/thumbnail2.jpg" alt="동물">
-        </a>
-      </div>
-      <div class="swiper-slide">
-        <a href="IQ.html">
-          <img src="./img/thumbnail3.jpg" alt="IQ">
-        </a>
-      </div>
-      <div class="swiper-slide">
-        <a href="fortune.html">
-          <img src="./img/thumbnail4.jpg" alt="포춘쿠키">
-        </a>
-      </div>
+    <div id="wrap">
+        <div id="header">
+            <div id="logo">
+                <h1>TEST</h1> <!--사이트명-->
+                <!-- <p>MINDTEST | #1 - J HTML TEAM PROJECT</p> -->
+            </div>
+            <div id="nav">
+                <div id="topbar">
+                    <ul> 
+                        <li class='home'><a href="index.html">home</a></li> <!--홈으로 이동-->
+                        <li class="about_us"><a href="about_us.html">about us</a></li> <!--소개글로 이동-->
+                    <li class="brain_test"><a href="Information.html">test information</a> <!--1. 지능 테스트로 이동-->
+                            <ul>
+                                <li class="test"><a href="#">IQ 테스트</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="slide">
+            <nav> <!--메뉴 바-->
+                <article class="main"> <!--메인 글-->
+                    <div id="whole"> <!--테스트 전체 분류-->
+                        <div class="swiper mySwiper"> <!--스와이프-->
+                            <br><br><br>
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <a href="mbti.html">
+                                  <img src="./img/thumbnail1.jpg" alt="mbti">
+                                </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="tournament.html">
+                                  <img src="./img/thumbnail2.jpg" alt="동물">
+                                </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="IQ.html">
+                                  <img src="./img/thumbnail3.jpg" alt="IQ">
+                                </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="fortune.html">
+                                  <img src="./img/thumbnail4.jpg" alt="포춘쿠키">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                </article>          
+            </nav>
+        </div>
+        <div id="footer">
+            <div id="logo">
+                로고
+            </div>
+            <div id="copyright">
+                <span> address | 대구광역시 북구 복현로 35 영진전문대학교 본관 202호   
+                    call | 053-940-5114    
+                    1 - J html 2조 | 박수연 , 이채원 , 임영도 , 전지훈 , 최강린 , 홍준서 | 
+                    &copy;yju.co.kr </span>
+            </div>
+        </div>
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-<footer>
-  <h1> 컴정J반 HTML 1조</h1> <!--페이티 아래 쓸모없는 내용(있어도 되고 없어도 됨)-->
-</footer>
-  <!-- JS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- 스와이프 코드 -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "cube",            //큐브 이펙트
-      grabCursor: true,         // 커서 드래그로 넘길 수 있음
-      loop:true,               //반복 true
-      cubeEffect: {
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 스와이프 코드 -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        effect: "cube",            //큐브 이펙트
+        grabCursor: true,         // 커서 드래그로 넘길 수 있음
+        loop:true,               //반복 true
+        cubeEffect: {
         shadow: true,          //큐브 아래 그림자 설정
         slideShadows: true,
         shadowOffset: 20,
         shadowScale: 0.94,
-      },
-      pagination: {
-        el: ".swiper-pagination",      //이건 뭘까
-      },
-    });
-  </script>
-</body>
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        },
+        });
+    </script>
 
+    <div class="btns"> <!--상단으로 이동 버튼-->
+        <div class="movetopbtn"><a href="index.html">맨 위로</a></div>
+    </div>
+</body>
 </html>
