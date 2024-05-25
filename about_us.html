@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TEST.com</title>
+    <style>
+        article {
+            border: 1px solid gray;
+            border-radius : 10px;
+            width : 1020px;
+            margin: 0 auto;
+        }
+        table {
+            border-radius: 10px;
+            margin: 0 auto; 
+            text-align: center;
+            background-color: #ccc;
+        }
+        h1, h3, td, th {
+            font-size: 2.5em;
+            text-align: center;
+        }
+        hr {
+            width : 1200px;
+        }
+    </style>
+    <link rel="stylesheet" href="topbar.css"><!--메뉴 바-->
+</head>
+<body>
+    <header>
+        <div id="sitename">
+            <h1>TEST</h1> <!--사이트명-->
+        </div>
+    </header> <!--머리말-->
+    <nav> <!--드롭다운 메뉴-->
+        <div id="topbar">
+            <ul> 
+                <li class='home'><a href="mainpage.html">home</a></li> <!--홈으로 이동-->
+                <li class="about_us"><a href="about_us.html">about us</a></li> <!--소개글로 이동-->
+            <li class="brain_test"><a href="#">brain test</a> <!--1. 지능 테스트로 이동-->
+                    <ul>
+                        <li class="test"><a href="#">IQ 테스트</a></li>
+                    </ul>
+                </li>
+                <li class="humor_test"><a href="#">humor test</a> <!--2. 유머 테스트로 이동-->
+                    <ul>
+                        <li class="test"><a href="#">동물 이상형 테스트</a></li>
+                        <li class="test"><a href="#">오늘의 포춘쿠키</a></li>
+                    </ul>
+                </li>
+                <li class="mbti_test"><a href="#">mbti test</a> <!--mbti 관련 테스트로 이동-->
+                    <ul>
+                        <li class="test"><a href="#">MBTI 테스트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+<article>
+    <div>
+        <h1> ABOUT US</h1>
+        <table border="1"> <!--소개 테이블-->
+            <tr>
+                <th colspan="2">HTML 2조 : 심리테스트 사이트</th>
+            </tr>
+            <tr>
+                <td>Design</td>
+                <td>박수연</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>홍준서</td>
+            </tr>
+            <tr>
+                <td rowspan="2">CSS</td>
+                <td>이채원</td>
+            </tr>
+            <tr>
+                <td>최강린</td>
+            </tr>
+            <tr>
+                <td rowspan="2">JavaScript</td>
+                <td>임영도(reader)</td>
+            </tr>
+            <tr>
+                <td>전지훈</td>
+            </tr>
+        </table>
+        <h3>- Thank You For Using Our Site -</h3>
+    </div>
+</article>
+<br><hr>
+<footer> <!--꼬리말-->
+    <address> address | 대구광역시 북구 복현로 35 영진전문대학교 본관 202호</address>
+    <p> call | 053-940-5114</p>
+    <p> 1 - J html 2조 | 박수연 , 이채원 , 임영도 , 전지훈 , 최강린 , 홍준서 | &copy;yju.co.kr </p>
+</footer>
+</body>
+</html>
