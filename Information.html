@@ -7,6 +7,7 @@
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="information.css">
+        <link rel="stylesheet" href="topbar.css"> <!--메뉴 바 CSS-->
         <!-- Demo styles -->
         <style>
            
@@ -14,6 +15,24 @@
     </head>
 
     <body>
+        <div id="header">
+            <div id="logo">
+                <h1>TEST</h1> <!--사이트명-->
+                <!-- <p>MINDTEST | #1 - J HTML TEAM PROJECT</p> -->
+            </div>
+            <div id="nav">
+                <div id="topbar">
+                    <ul> 
+                        <li class='home'><a href="index.html">home</a></li> <!--홈으로 이동-->
+                        <li class="about_us"><a href="about_us.html">about us</a></li> <!--소개글로 이동-->
+                        <li class="brain_test"><a href="Information.html">test information</a> <!--1. 지능 테스트로 이동-->
+                            <ul>
+                                <li class="test"><a href="#">IQ 테스트</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         <!--모달 팝업-->
         <div class="modal modal1">
             <div class="modal_popup">
