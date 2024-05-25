@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
 * {
   background-color: rgb(255, 255, 255);
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Song Myung', Arial, sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -37,9 +38,11 @@ img{
 
 #startButton{
   background-color: rgb(0, 0, 255);
+  font-family: 'Song Myung', Arial, sans-serif;;
   color: white;
   font-weight: bold;
   font-size: 15px;
+  line-height: 13px;
   width: 160px;
   height: 50px;
   border: none;
@@ -53,6 +56,7 @@ img{
 
 #start-box > button {
   background-color: rgb(0, 0, 255);
+  font-family: 'Song Myung', Arial, sans-serif;;
   border: 10px;
   padding: 20px 40px;
   margin: 20px auto;
@@ -67,8 +71,9 @@ img{
 }
 
 #question {
-  font-size: 20px;
+  font-size: 50px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .answer-options {
@@ -77,13 +82,19 @@ img{
   justify-content: center;
 }
 
-.answer-options button  {
-  background-color: #eee;
+.answer-options button {
+  background:linear-gradient(#dbd5f2, #eae7f7,#ffffff);
+  font-family: 'Song Myung', Arial, sans-serif;;
+  font-size: 30px;
+  width: 700px;
+  height: 100px;
   border: 10px;
   padding: 10px 20px;
   margin: 20px auto;
   cursor: pointer;
   display: block;
+  border-radius: 10px;
+  box-shadow: 5px 5px 4px #c3b9ef;
 
 }
 
@@ -92,12 +103,20 @@ img{
 }
 
 #answerButton {
-  background-color: #eee;
+  background-image: url(./img/보내기.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  font-family: 'Song Myung', Arial, sans-serif;;
   border: 10px;
   padding: 10px 20px;
   margin: 20px auto;
+  margin-top: 100px;
   cursor: pointer;
   display: block;
+  border-radius: 10px;
 }
 
 
@@ -109,6 +128,7 @@ img{
 
 #result-box > button {
   background-color: #eee;
+  font-family: 'Song Myung', Arial, sans-serif;;
   border: 10px;
   padding: 20px 40px;
   margin: 20px auto;
@@ -128,6 +148,7 @@ img{
   background-color: royalblue;
   border: none;
   border-radius: 5px;
+  font-family: 'Song Myung', Arial, sans-serif;;
   color: #fff;
   cursor: pointer;
   transition: box-shadow 0.2s;
@@ -164,6 +185,7 @@ img{
   background-color: rgb(116, 0, 0);
   border: none;
   border-radius: 5px;
+  font-family: 'Song Myung', Arial, sans-serif;;
   color: #fff;
   cursor: pointer;
   transition: box-shadow 0.2s;
@@ -175,6 +197,7 @@ img{
   background-color: rgb(116, 0, 0);
   border: none;
   border-radius: 5px;
+  font-family: 'Song Myung', Arial, sans-serif;;
   color: #fff;
   cursor: pointer;
   transition: box-shadow 0.2s;
@@ -224,5 +247,6 @@ img{
 }
 h3 {
   /*모달 내 글씨*/
+  font-family: 'Song Myung', Arial, sans-serif;;
   text-align: center;
 }
