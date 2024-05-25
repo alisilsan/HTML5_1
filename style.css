@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    /*모든요소 간격 제거*/
+}
+body{
+    width:100%;
+    height:100%;
+    background-color: aqua;
+    margin:0 auto;
+    /*가운데 정렬*/
+}
+#header{
+    width:100%;
+    height:200px;
+    background-color: aquamarine;
+}
+#header>#logo{
+    float:left;
+    width:400px;
+    height:200px;
+    background-color: burlywood;
+}
+#nav{
+    float:left;
+    width:calc(100% - 400px);
+    height:200px;
+    background-color: cadetblue;
+}
+#slide{
+    width:100%;
+    height:650px;
+    background-color: antiquewhite;
+}
+#footer{
+    width:100%;
+    height:100px;
+    background-color: brown;
+}
+#footer>#logo{
+    float:left;
+    width:400px;
+    height:100px;
+    background-color: rgb(127, 127, 173);
+}
+#copyright{
+    float:left;
+    width:calc(100% - 400px);
+    height:100px;
+    background-color: darkcyan;
+}

@@ -1,0 +1,52 @@
+body, ul, li {
+    margin : 0;
+    padding : 0;
+    list-style: none;
+}
+#sitename{
+    font-size: 1.5em;
+    margin: 50px;
+    text-align: center;
+}
+ ul li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#topbar {
+    font : bold 48px "malgun gothic";
+    border-radius: 5px;
+    width : 100%;
+    height : 200px;
+    background : #ccc;
+    color : black;
+    line-height: 150px;
+    margin : 0 auto;
+    text-align: center;
+}
+#topbar > ul > li {
+    float : left;
+    margin: 10px 20px;
+    width : 400px;
+    position: relative;
+}
+#topbar > ul > li > ul {
+    width : 130px;
+    display : none;
+    position : absolute;
+    font-size: 14px;
+    background-color: #e7e7e7;
+}
+#topbar > ul > li:hover > ul {
+    display: block;
+}
+#topbar > ul > li > ul > li:hover {
+    background-color: gray;
+    transition : ease 1s;
+}
+footer {
+    width: 500px;
+    margin : 0 auto;
+}
