@@ -1,6 +1,8 @@
 .swiper {
     width: 500px;
     height: 500px;
+    position: absolute;
+    transform: translate(-0%, -130%);
 }
 
 .swiper-slide {
