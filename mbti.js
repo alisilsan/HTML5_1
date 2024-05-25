@@ -26,9 +26,13 @@ modalReset.addEventListener("click", function () {
 });
 
 // 현재 페이지의 URL 가져와서 input 태그의 값으로 설정
-urlInput.value = nowUrl;
+function updateUrlInput() {
+    urlInput.value = window.location.href;
+}
+updateUrlInput();
 
 copyButton.addEventListener("click", copyUrl);
+
 
 // 주소 복사 스크립트
 function copyUrl() {
@@ -141,6 +145,42 @@ const questions = [
 let currentQuestion = 0; // 현재 질문 인덱스
 let scores = { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 }; // 사용자 점수
 
+// URL의 query string을 파싱하여 객체로 반환하는 함수
+function getQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    const query = {};
+    for (const [key, value] of params.entries()) {
+        query[key] = value;
+    }
+    return query;
+}
+
+// 현재 상태를 query string으로 설정하는 함수
+function updateQueryString() {
+    const params = new URLSearchParams();
+    params.set('question', currentQuestion);
+    for (const key in scores) {
+        params.set(key, scores[key]);
+    }
+    const newUrl = `${window.location.pathname}?${params.toString()}`;
+    window.history.pushState({ path: newUrl }, '', newUrl);
+    updateUrlInput();  // URL input 업데이트
+}
+
+// URL query string을 읽어 초기 상태를 설정하는 함수
+function initializeFromQueryString() {
+    const query = getQueryParams();
+    if (query.question) {
+        currentQuestion = parseInt(query.question);
+    }
+    for (const key in scores) {
+        if (query[key]) {
+            scores[key] = parseInt(query[key]);
+        }
+    }
+}
+
+
 function showQuestion() {
     // 현재 질문 객체 가져오기
     const question = questions[currentQuestion];
@@ -152,8 +192,10 @@ function showQuestion() {
         optionButton.textContent = question.options[i].text;
         optionButton.onclick = () => selectAnswer(question.options[i].score); // 클릭 이벤트에 해당 선택지의 점수 전달
     }
+    updateQueryString();  // 상태 업데이트
 }
 
+// 선택지 클릭 시 호출되는 함수
 function selectAnswer(score) {
     // 선택된 선택지의 점수를 각 유형에 추가
     for (let key in score) {
@@ -166,7 +208,6 @@ function selectAnswer(score) {
     } else {
         // 결과 페이지로 이동하는 버튼 생성
         const button = document.createElement('button');
-        button.textContent = '결과창으로 이동';
         button.id = "answerButton";
         // 버튼 클릭 시 결과 함수 호출
         document.getElementById("question-box").appendChild(button);
@@ -194,6 +235,7 @@ function goToResult() {
     if (answerButton) {
         answerButton.parentNode.removeChild(answerButton);
     }
+    updateQueryString();  // 결과 페이지에서도 상태 업데이트
 }
 
 function calculateMBTI() {
@@ -207,3 +249,16 @@ function calculateMBTI() {
 
 // 초기에 첫 번째 질문 표시
 showQuestion();
+
+// 페이지 로드 시 query string에서 상태 복원
+initializeFromQueryString();
+
+// 초기 질문 표시
+if (currentQuestion === 0) {
+    document.getElementById("start-box").style.display = "block";
+    document.getElementById("question-box").style.display = "none";
+} else {
+    document.getElementById("start-box").style.display = "none";
+    document.getElementById("question-box").style.display = "block";
+    showQuestion();
+}
