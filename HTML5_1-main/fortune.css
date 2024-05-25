@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20vh;
+    position: relative;
+}
+
+#fortune-cookie {
+    width: 900px;
+    height: 600px;
+    cursor: pointer;
+    position: relative; /* fortuneSecondimage가 정확한 위치에 표시되도록 함 */
+}
+
+.infocontainer {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    z-index: 999;
+}
+
+.fortune-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    cursor: pointer;
+}
+
+.fortune-info {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-size: 300%;
+}
+
+.fortuneSecondimage {
+    width: 900px;
+    height: 600px;
+ /* #fortune-cookie와 같은 위치로 이동 */
+}
+
+.randomFortune {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.restart-button {
+    position: fixed;
+    top: calc(50% + 500px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 200px;
+    padding: 10px 20px;
+    font-size: 200%;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: black;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
