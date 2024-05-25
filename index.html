@@ -3,12 +3,13 @@
 <head>
     <link rel="stylesheet" href="topbar.css"> <!--메뉴 바 CSS-->
     <link rel="stylesheet" href="movetopbtn.css"> <!--상단으로 이동 버튼 CSS-->
-    <link rel="stylesheet" href="index_1.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="index_1.css"> <!--메인 홈페이지 CSS-->
+    <link rel="stylesheet" href="autoslide.css"> <!--오토 슬라이드 CSS-->
+    <link rel="stylesheet" href="./style.css"> <!--시멘틱 태그 CSS-->
      <!-- Link Swiper's CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>메인페이지 초안</title>
 </head>
 <body>
@@ -36,32 +37,41 @@
             <nav> <!--메뉴 바-->
                 <article class="main"> <!--메인 글-->
                     <div id="whole"> <!--테스트 전체 분류-->
-                        <div class="swiper mySwiper"> <!--스와이프-->
-                            <br><br><br>
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                <a href="mbti.html">
-                                  <img src="./img/thumbnail1.jpg" alt="mbti">
-                                </a>
-                              </div>
-                              <div class="swiper-slide">
-                                <a href="tournament.html">
-                                  <img src="./img/thumbnail2.jpg" alt="동물">
-                                </a>
-                              </div>
-                              <div class="swiper-slide">
-                                <a href="IQ.html">
-                                  <img src="./img/thumbnail3.jpg" alt="IQ">
-                                </a>
-                              </div>
-                              <div class="swiper-slide">
-                                <a href="fortune.html">
-                                  <img src="./img/thumbnail4.jpg" alt="포춘쿠키">
-                                </a>
-                              </div>
+                      <!-- 슬라이드 자동 뒷배경 -->
+                      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+                      centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                        <swiper-slide><img src="./img/background1.png"></swiper-slide>
+                        <swiper-slide><img src="./img/background2.png"></swiper-slide>
+                        <swiper-slide><img src="./img/background3.png"></swiper-slide>
+                        <swiper-slide><img src="./img/background4.png"></swiper-slide>
+                      </swiper-container>
+                      <!--스와이프-->
+                      <div class="swiper mySwiper"> 
+                          <br><br><br>
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="mbti.html">
+                                <img src="./img/thumbnail1.jpg" alt="mbti">
+                              </a>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-slide">
+                              <a href="tournament.html">
+                                <img src="./img/thumbnail2.jpg" alt="동물">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="IQ.html">
+                                <img src="./img/thumbnail3.jpg" alt="IQ">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="fortune.html">
+                                <img src="./img/thumbnail4.jpg" alt="포춘쿠키">
+                              </a>
+                            </div>
                           </div>
+                          <!-- <div class="swiper-pagination"></div> -->
+                        </div>
                 </article>          
             </nav>
         </div>
@@ -77,6 +87,9 @@
             </div>
         </div>
     </div>
+    <!-- 뒷배경 autoslide 코드 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> 
+    <!-- 스와이프 쿠브 코드 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 스와이프 코드 -->
     <script>
