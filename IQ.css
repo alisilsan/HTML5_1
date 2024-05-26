@@ -6,6 +6,14 @@
     height: 100vh;
     margin: 0;
 }
+header {
+    padding: 20px;
+    border: 2px solid rgb(214, 212, 212);
+}
+
+header > #title {
+    border: 2px solid rgb(214, 212, 212);
+}
 
 .생각{
     margin-left: 0px auto;
@@ -44,33 +52,59 @@
     font-family: sans-serif;
 }
 /*5지선다 박스 속성*/
-.선택 {
+.선택 > img {
+    float: left;
+    width: 500px;
+    height: 500px;
+    padding: 0px 100px;
+    border: 2px solid rgb(214, 212, 212);
+    margin: 0 100px;
+    position: relative;
+}
+
+.선택 table {
+    width: 800px;
     font-size: 20px;
     font-family: sans-serif;
     font-weight: bold;
-    width: 1000px;
-    height: auto;
+    height: 500px;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(214, 212, 212);
     padding: 20px;
-    margin: 20px auto;
-    text-align: left;
+    margin: 0 auto;
+    text-align: center;
     position: relative;
     right: 0;
     top: 0;
 }
-/* 5지선다 */
-.선택 li{
+
+/* 4지선다 */
+.선택 th{
     list-style: none;
     padding: 0;
-    margin: 15px;
 }
+.선택 th img{
+    width: 150px;
+    height: 150px;
+}
+.nextBtn {
+    width: 100px;
+    height: 50px;
+    background: skyblue;
+}
+
+#submitIQ {
+    width: 100px;
+    height: 50px;
+    background: skyblue;
+}
+
 /* 라디오 버튼과 글씨 간격 */
 label{
     padding-left: 10px;
 }
 /* 페이지 아래 있어도 되고 없어도 되는 부분*/
-footer{
+#footer{
     text-align: center;
     font-size: 10px;
     background-color: gray;
