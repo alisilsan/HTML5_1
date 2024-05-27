@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         resultDisplay.style.display = 'block';
         IQscoreDisplay.textContent = score;
+        document.body.classList.add('started');
     }
 
     // 시작 버튼 클릭 이벤트
