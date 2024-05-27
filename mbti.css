@@ -124,6 +124,7 @@ img{
   background-image: url(./img/보내기.png);
   background-size: cover;
   background-position: center;
+  background-color: #fff;
   width: 150px;
   height: 150px;
   font-family: 'Song Myung', Arial, sans-serif;;
@@ -138,8 +139,13 @@ img{
 
 #result-box {
   display: none;
+  background-color: #ffffff;
   text-align: center;
-  margin-top: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 #result-box > button {
