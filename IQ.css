@@ -63,6 +63,7 @@ header > #title {
 }
 
 .선택 table {
+    float: left;
     width: 800px;
     font-size: 20px;
     font-family: sans-serif;
