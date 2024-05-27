@@ -199,37 +199,37 @@
     function getResultDescription(mbti) {
         switch (mbti) {
             case "ENFJ":
-                return "당신은 ENFJ 유형입니다. ENFJ 유형은 외향적이며 실용적인 경향이 있습니다."
+                return "당신은 ENFJ 유형입니다.\n ENFJ 유형은 외향적이며 실용적인 경향이 있습니다."
             case "ENFP":
-                return "당신은 ENFP 유형입니다. ENFP 유형은 조용하고 신중하며 신뢰할 수 있는 사람들입니다."
+                return "당신은 ENFP 유형입니다.\n ENFP 유형은 조용하고 신중하며 신뢰할 수 있는 사람들입니다."
             case "ENTJ":
-                return "당신은 ENTJ 유형입니다. ENTJ 유형은 조용하고 신중하며 신뢰할 수 있는 사람들입니다."
+                return "당신은 ENTJ 유형입니다.\n ENTJ 유형은 조용하고 신중하며 신뢰할 수 있는 사람들입니다."
             case "ENTP":
-                return "당신은 ENTP 유형입니다. ENTP 유형은 조용하고 신중하며 신뢰할 수 있는 사람들입니다."    
+                return "당신은 ENTP 유형입니다.\n ENTP 유형은 조용하고 신중하며 신뢰할 수 있는 사람들입니다."    
             case "ESFJ":
-                return "당신은 ESFJ 유형입니다. ESFJ 유형은 외향적이며 실용적인 경향이 있습니다."
+                return "당신은 ESFJ 유형입니다.\n ESFJ 유형은 외향적이며 실용적인 경향이 있습니다."
             case "ESFP":
-                return "당신은 ESFP 유형입니다. ESFP 유형은 외향적이며 실용적인 경향이 있습니다."
+                return "당신은 ESFP 유형입니다.\n ESFP 유형은 외향적이며 실용적인 경향이 있습니다."
             case "ESTJ":
-                 return "당신은 ESTJ 유형입니다. ESTJ 유형은 외향적이며 실용적인 경향이 있습니다."
+                 return "당신은 ESTJ 유형입니다.\n ESTJ 유형은 외향적이며 실용적인 경향이 있습니다."
             case "ESTP":
-                 return "당신은 ESTP 유형입니다. ESTP 유형은 외향적이며 실용적인 경향이 있습니다."
+                 return "당신은 ESTP 유형입니다.\n ESTP 유형은 외향적이며 실용적인 경향이 있습니다."
             case "INFJ":
-                 return "당신은 INFJ 유형입니다. INFJ 유형은 외향적이며 실용적인 경향이 있습니다."
+                 return "당신은 INFJ 유형입니다.\n INFJ 유형은 외향적이며 실용적인 경향이 있습니다."
             case "INFP":
-                 return "당신은 INFP 유형입니다. INFP 유형은 외향적이며 실용적인 경향이 있습니다."
+                 return "당신은 INFP 유형입니다.\n INFP 유형은 외향적이며 실용적인 경향이 있습니다."
             case "INTJ":
-                 return "당신은 INTJ 유형입니다. INTJ 유형은 외향적이며 실용적인 경향이 있습니다."
+                 return "당신은 INTJ 유형입니다.\n INTJ 유형은 외향적이며 실용적인 경향이 있습니다."
             case "INTP":
-                 return "당신은 INTP 유형입니다. INTP 유형은 외향적이며 실용적인 경향이 있습니다."
+                 return "당신은 INTP 유형입니다.\n INTP 유형은 외향적이며 실용적인 경향이 있습니다."
             case "ISFJ":
-                 return "당신은 ISFJ 유형입니다. ISFJ 유형은 외향적이며 실용적인 경향이 있습니다."
+                 return "당신은 ISFJ 유형입니다.\n ISFJ 유형은 외향적이며 실용적인 경향이 있습니다."
             case "ISFP":
-                 return "당신은 ISFP 유형입니다. ISFP 유형은 외향적이며 실용적인 경향이 있습니다."
+                 return "당신은 ISFP 유형입니다.\n ISFP 유형은 외향적이며 실용적인 경향이 있습니다."
             case "ISTJ":
-                 return "당신은 ISTJ 유형입니다. ISTJ 유형은 외향적이며 실용적인 경향이 있습니다."
+                 return "당신은 ISTJ 유형입니다.\n ISTJ 유형은 외향적이며 실용적인 경향이 있습니다."
             case "ISTP":
-                 return "당신은 ISTP 유형입니다. ISTP 유형은 외향적이며 실용적인 경향이 있습니다."   
+                 return "당신은 ISTP 유형입니다.\n ISTP 유형은 외향적이며 실용적인 경향이 있습니다."   
         }
     }
 
