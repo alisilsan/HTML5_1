@@ -118,8 +118,27 @@
                 // 각 이미지를 클릭했을 때 해당 모달 열기
                 modalButtons.forEach((button) => {
                     button.addEventListener("click", function () {
+                        // 모든 모달을 닫기
+                        modals.forEach((modal) => {
+                            modal.classList.remove("on");
+                        });
+
+                        // 해당 모달 열기
                         const modal = document.querySelector(`.${button.dataset.modal}`);
                         modal.classList.add("on");
+
+                        // 모든 슬라이드의 선택 효과 제거
+                        document.querySelectorAll(".swiper-slide").forEach((slide) => {
+                            slide.classList.remove("selected");
+                        });
+
+                        // 선택된 슬라이드에 선택 효과 추가
+                        const selectedSlide = button.closest(".swiper-slide");
+                        selectedSlide.classList.add("selected");
+
+                        // 선택된 슬라이드를 가운데로 이동
+                        const slideIndex = Array.from(selectedSlide.parentElement.children).indexOf(selectedSlide);
+                        swiper.slideTo(slideIndex);
                     });
                 });
 
