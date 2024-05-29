@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
-.swiper {
+.mySwiper{
     width: 500px;
     height: 500px;
     position: absolute;
     transform: translate(-0%, -130%);
 }
 
-.swiper-slide {
+.mySwiper .swiper-slide {
     background-position: center;
     background-size: cover;
 }
 
-.swiper-slide img {
+.mySwiper .swiper-slide img {
     display: block;
     width: 100%;   
 }
