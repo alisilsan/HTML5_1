@@ -128,13 +128,17 @@
         });
     </script>
     <script>
-      var swiper2 = new Swiper(".mySwiper2", {         
-        grabCursor: true,         // 커서 드래그로 넘길 수 있음
-        loop:true,               //반복 true
-        });
-        // 슬라이드 동기화
-      swiper1.controller.control = swiper2;
-      swiper2.controller.control = swiper1;
+      var swiper2 = new Swiper(".mySwiper2", {
+                grabCursor: true, // 커서 드래그로 넘길 수 있음
+                loop: true, //반복 true
+                autoplay: {
+                    delay: 1500,
+                    disableOnInteraction: false,
+                },
+            });
+            // 슬라이드 동기화
+            swiper1.controller.control = swiper2;
+            swiper2.controller.control = swiper1;
     </script>
     <div class="btns"> <!--상단으로 이동 버튼-->
         <div class="movetopbtn"><a href="index.html">맨 위로</a></div>
