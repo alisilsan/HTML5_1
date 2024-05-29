@@ -12,12 +12,14 @@ body {
   padding: 0;
 }
 
-swiper-container {
+.swiper-container .swiper {
   width: 100%;
   height: 650px;
+  object-fit: cover;
+  display: flex;
 }
 
-swiper-slide {
+.swiper-container > .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #f1b4b4;
@@ -26,8 +28,8 @@ swiper-slide {
   align-items: center;
 }
 
-swiper-slide img {
-  display: block;
+.swiper-container > img {
+  display: flex;
   width: 100%;
   height: 100%;
   object-fit: cover;
