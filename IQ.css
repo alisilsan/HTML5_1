@@ -82,24 +82,24 @@ header > h1 {
 /*5지선다 박스 속성*/
 .선택 > img {
     float: left;
-    width: 500px;
+    background-color: #fff;
+    width: 30%;
     height: 500px;
     padding: 0px 100px;
     border: 2px solid rgb(214, 212, 212);
-    margin: 0 100px;
+    margin: 0  50px;
     position: relative;
 }
 
 .선택 table {
-    width: 800px;
+    float: right;
+    width: 40%;
     font-size: 20px;
-    font-family: sans-serif;
-    font-weight: bold;
     height: 500px;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(214, 212, 212);
     padding: 20px;
-    margin: 0 auto;
+    margin: 0 50px;
     text-align: center;
     position: relative;
     right: 0;
@@ -133,6 +133,8 @@ label{
 }
 /* 페이지 아래 있어도 되고 없어도 되는 부분*/
 #footer{
+    width: 100%;
+    height: 50px;
     text-align: center;
     font-size: 10px;
     background-color: gray;
