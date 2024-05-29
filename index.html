@@ -6,11 +6,19 @@
     <link rel="stylesheet" href="index_1.css"> <!--메인 홈페이지 CSS-->
     <link rel="stylesheet" href="autoslide.css"> <!--오토 슬라이드 CSS-->
     <link rel="stylesheet" href="./style.css"> <!--시멘틱 태그 CSS-->
-     <!-- Link Swiper's CSS -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>메인페이지 초안</title>
+    <style>
+      /* 처음 4개의 슬라이드 이미지에 object-fit: cover 적용 */
+      .swiper-slide:nth-child(-n+4) img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+      }
+  </style>
 </head>
 <body>
     <div id="wrap">
@@ -38,13 +46,24 @@
                 <article class="main"> <!--메인 글-->
                     <div id="whole"> <!--테스트 전체 분류-->
                       <!-- 슬라이드 자동 뒷배경 -->
-                      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
-                      centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-                        <swiper-slide><img src="./img/mbti배경.png"></swiper-slide>
-                        <swiper-slide><img src="./img/background2.png"></swiper-slide>
-                        <swiper-slide><img src="./img/background3.png"></swiper-slide>
-                        <swiper-slide><img src="./img/background4.png"></swiper-slide>
-                      </swiper-container>
+                      <div class="swiper-container">
+                        <div class="swiper mySwiper2">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <img src="./img/mbti배경.png" width="100%" height="650px">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./img/background2.png" width="100%" height="650px">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./img/background3.png" width="100%" height="650px">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./img/background4.png" width="100%" height="650px">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <!--스와이프-->
                       <div class="swiper mySwiper"> 
                           <br><br><br>
@@ -72,6 +91,7 @@
                           </div>
                           <!-- <div class="swiper-pagination"></div> -->
                         </div>
+                      </div>
                 </article>          
             </nav>
         </div>
@@ -92,7 +112,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 스와이프 코드 -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper1 = new Swiper(".mySwiper", {
         effect: "cube",            //큐브 이펙트
         grabCursor: true,         // 커서 드래그로 넘길 수 있음
         loop:true,               //반복 true
@@ -107,7 +127,15 @@
         },
         });
     </script>
-
+    <script>
+      var swiper2 = new Swiper(".mySwiper2", {         
+        grabCursor: true,         // 커서 드래그로 넘길 수 있음
+        loop:true,               //반복 true
+        });
+        // 슬라이드 동기화
+      swiper1.controller.control = swiper2;
+      swiper2.controller.control = swiper1;
+    </script>
     <div class="btns"> <!--상단으로 이동 버튼-->
         <div class="movetopbtn"><a href="index.html">맨 위로</a></div>
     </div>
