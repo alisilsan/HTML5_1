@@ -16,19 +16,23 @@ a{
     color: inherit;
 }
 #topbar {
-    font : bold 48px "malgun gothic";
-    border-radius: 5px;
-    width : 100%;
-    height : 200px;
-    background : #ccc;
-    color : black;
+    font: bold 40px "malgun gothic";
+    width: 100%;
+    height: 150px;
+    background: #333;
+    color: #969bd7;
     line-height: 150px;
-    margin : 0 auto;
+    margin: 0 auto;
     text-align: center;
+    text-shadow: 
+        3px 3px 0 black, 
+        -3px -3px 0 black, 
+        3px -3px 0 black, 
+        -3px 3px 0 black;
 }
 #topbar > ul > li {
     float : left;
-    margin: 10px 20px;
+    margin: 0px 20px;
     width : 400px;
     position: relative;
 }
@@ -36,17 +40,13 @@ a{
     width : 130px;
     display : none;
     position : absolute;
-    font-size: 14px;
     background-color: #e7e7e7;
 }
+
 #topbar > ul > li:hover > ul {
     display: block;
 }
 #topbar > ul > li > ul > li:hover {
     background-color: gray;
     transition : ease 1s;
-}
-footer {
-    width: 500px;
-    margin : 0 auto;
 }
