@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="topbar.css"> <!--메뉴 바 CSS-->
+    <link rel="stylesheet" href="sidebar.css"> <!--sidebar CSS-->
     <link rel="stylesheet" href="movetopbtn.css"> <!--상단으로 이동 버튼 CSS-->
     <link rel="stylesheet" href="index_1.css"> <!--메인 홈페이지 CSS-->
     <link rel="stylesheet" href="autoslide.css"> <!--오토 슬라이드 CSS-->
@@ -16,30 +17,64 @@
       .mySwiper2 .swiper-slide:nth-child(-n+4) img {
           object-fit: cover;
           width: 100%;
-          height: 650px;
+          height: 700px;
       }
   </style>
 </head>
 <body>
     <div id="wrap">
-        <div id="header">
+      <div id="header">
+        <div id="logo">
+        <img src="./img/logo_1_1.png" alt="logo_image">
+        </div>
+        <div id="nav">
+          <div id="topbar">
+            <ul> 
+                <li class='home'><a href="index.html">home</a></li> 
+                <li class="about_us"><a href="about_us.html">about us</a></li>
+                <li class="brain_test"><a href="Information.html">test information</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="topnav">
+            <a href="about_us.html">about us</a>
+            <a href="Information.html">information</a>
+            <a href="main.html">home</a>
+            
+        </div> -->
+      </div>
+  </div>
+    <div class="sidebar">
+      <a href="#">logo</a>
+      <a href="main.html">HOME</a>
+      <a href="about_us.html">about us</a>
+        <ul>
+          <li id="information_side"><a href="Information.html">information</a>
+            <ul>
+              <li class="test"><a href="#">IQ 테스트</a></li>
+              <li class="test"><a href="#">MBTI 테스트</a></li>
+              <li class="test"><a href="#">동물 이상형 테스트</a></li>
+              <li class="test"><a href="#">오늘의 포춘쿠키</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- <div id="header">
             <div id="logo">
-                <h1>TEST</h1> <!--사이트명-->
-                <!-- <p>MINDTEST | #1 - J HTML TEAM PROJECT</p> -->
+                <h1>TEST</h1> 
             </div>
             <div id="nav">
                 <div id="topbar">
                     <ul> 
-                        <li class='home'><a href="index.html">home</a></li> <!--홈으로 이동-->
-                        <li class="about_us"><a href="about_us.html">about us</a></li> <!--소개글로 이동-->
-                        <li class="brain_test"><a href="Information.html">test information</a> <!--1. 지능 테스트로 이동-->
+                        <li class='home'><a href="index.html">home</a></li> 
+                        <li class="about_us"><a href="about_us.html">about us</a></li>
+                        <li class="brain_test"><a href="Information.html">test information</a> 
                             <ul>
                                 <li class="test"><a href="#">IQ 테스트</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div id="slide">
             <nav> <!--메뉴 바-->
