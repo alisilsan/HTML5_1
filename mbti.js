@@ -33,7 +33,6 @@
 
     copyButton.addEventListener("click", copyUrl);
 
-
     // 주소 복사 스크립트
     function copyUrl() {
         navigator.clipboard.writeText(nowUrl).then(() => {
@@ -156,17 +155,24 @@
     }
 
     // 현재 상태를 query string으로 설정하는 함수
-    function updateQueryString() {
-        const params = new URLSearchParams();
+function updateQueryString() {
+    const params = new URLSearchParams();
+    const url = new URLSearchParams(location.search);
+    console.log(url.get("question"))
+    if(url.get("question") === null ||url.get("question") <8){
+
         params.set('question', currentQuestion);
+        console.log(scores)
         for (const key in scores) {
             params.set(key, scores[key]);
         }
         const newUrl = `${window.location.pathname}?${params.toString()}`;
         window.history.pushState({ path: newUrl }, '', newUrl);
-        updateUrlInput();  // URL input 업데이트
     }
-
+    else{
+        goToResult()
+    }
+}
     // URL query string을 읽어 초기 상태를 설정하는 함수
     function initializeFromQueryString() {
         const query = getQueryParams();
@@ -182,6 +188,7 @@
 
 
     function showQuestion() {
+        console.log(123)
         // 현재 질문 객체 가져오기
         const question = questions[currentQuestion];
         // 질문 텍스트 엘리먼트에 질문 내용 설정
