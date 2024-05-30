@@ -20,9 +20,9 @@ body {
 }
 #header > #logo {
     float: left;
-    width:350px;
+    width:550px;
     height:150px;
-    background: #333;
+    background: #111;
 }
 
 #header > #logo > img {
@@ -31,7 +31,7 @@ body {
 
 #nav {
     float: left;
-    width:calc(100% - 350px);
+    width:calc(100% - 550px);
     height:150px;
     background: #333;
 }
