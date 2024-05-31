@@ -16,12 +16,12 @@ a{
     color: inherit;
 }
 #topbar {
-    font: bold 40px "malgun gothic";
+    font: bold 20px "malgun gothic";
     width: 100%;
-    height: 150px;
+    height: 100px;
     background: #333;
     color: #969bd7;
-    line-height: 150px;
+    line-height: 100px;
     margin: 0 auto;
     text-align: center;
     text-shadow: 
@@ -31,9 +31,9 @@ a{
         -3px 3px 0 black;
 }
 #topbar > ul > li {
-    float : left;
-    margin: 0px 20px;
-    width : 400px;
+    float : right;
+    margin: 0px 10px;
+    width : 200px;
     position: relative;
 }
 #topbar > ul > li > ul {
