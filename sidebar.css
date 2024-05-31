@@ -3,33 +3,42 @@
 }
 .sidebar {
     height: 100%;
-    width: 100px; /* 사이드바의 폭 */
+    width: 50px; /* 사이드바의 폭 */
     position: fixed;
     top: 0;
-    right: 0;
-    background-color: #333; /* 사이드바의 배경색 */
+    left: 0;
+    background-color: #666; /* 사이드바의 배경색 */
     transition: width 0.5s; /* 사이드바 너비 변경 애니메이션 */
     overflow-x: hidden; /* 너비가 작아질 때 스크롤이 생기지 않도록 설정 */
     z-index: 999;
 }
 .sidebar:hover {
-    width: 300px; /* hover 상태일 때 사이드바 너비 증가 */
+    width: 550px; /* hover 상태일 때 사이드바 너비 증가 */
 }
 .sidebar a {
+    margin-left: 50px;
     padding: 10px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     color: transparent; /* 글자를 투명하게 설정하여 숨김 */
     display: block;
 }
 .sidebar:hover a {
-    color: #fff; /* hover 상태일 때 글자 색상을 보이도록 변경 */
+    color: #969bd7; /* hover 상태일 때 글자 색상을 보이도록 변경 */
+}
+.sidebar .category {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.sidebar img {
+    margin-left: 50px;
+    display: block;
 }
 .sidebar > ul {
     list-style: none;
 }
 .sidebar a:hover {
-    background-color: #555; /* 마우스 호버시 링크의 배경색 */
+    background-color: #333; /* 마우스 호버시 링크의 배경색 */
 }
 .sidebar > ul > li {
     position: relative;
@@ -41,3 +50,14 @@
 .sidebar > ul > li:hover > ul {
     display: block; /*호버시 메뉴 열리게*/
 }
+/* 사이드바 너비의 80%만큼 왼쪽으로 이동 */
+.side-bar {
+    border-radius: 20px;
+    transform: translate(calc(var(--side-bar-width) * -0.8), 0);  /* X축 이동, Y축 고정 */
+    transition: .5s;
+  }
+  
+  /* 마우스 인식 시 원래의 위치로 이동 */
+  .side-bar:hover {
+    transform: translate(-20px, 0);   /* 둥근 모서리의 너비만큼 X축 이동, Y축 고정 */
+  }
