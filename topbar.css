@@ -1,3 +1,4 @@
+/* 
 body, ul, li {
     margin : 0;
     padding : 0;
@@ -16,26 +17,36 @@ a{
     color: inherit;
 }
 #topbar {
-    font: bold 20px "malgun gothic";
+    font: bold 32px "malgun gothic";
     width: 100%;
     height: 100px;
     background: #333;
     color: #969bd7;
-    line-height: 100px;
+    line-height: 50px;
     margin: 0 auto;
     text-align: center;
     text-shadow: 
-        3px 3px 0 black, 
-        -3px -3px 0 black, 
-        3px -3px 0 black, 
-        -3px 3px 0 black;
+        2px 2px 0 black, 
+        -2px -2px 0 black, 
+        2px -2px 0 black, 
+        -2px 2px 0 black;
 }
 #topbar > ul > li {
-    float : right;
-    margin: 0px 10px;
-    width : 200px;
+    float : left;
+    margin: 20px 30px;
+    width : 300px;
     position: relative;
+    cursor: pointer;
 }
+
+
+#topbar > ul > li:hover {
+    background-color: #444;
+    color: #9e46a1;
+    border-radius: 15px;
+    
+}
+
 #topbar > ul > li > ul {
     width : 130px;
     display : none;
@@ -50,3 +61,6 @@ a{
     background-color: gray;
     transition : ease 1s;
 }
+
+*/
+

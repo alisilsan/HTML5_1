@@ -3,17 +3,17 @@
 }
 .sidebar {
     height: 100%;
-    width: 50px; /* 사이드바의 폭 */
+    width: 100px; /* 사이드바의 폭 */
     position: fixed;
     top: 0;
-    left: 0;
-    background-color: #111; /* 사이드바의 배경색 */
+    right: 0;
+    background-color: #333; /* 사이드바의 배경색 */
     transition: width 0.5s; /* 사이드바 너비 변경 애니메이션 */
     overflow-x: hidden; /* 너비가 작아질 때 스크롤이 생기지 않도록 설정 */
     z-index: 999;
 }
 .sidebar:hover {
-    width: 250px; /* hover 상태일 때 사이드바 너비 증가 */
+    width: 300px; /* hover 상태일 때 사이드바 너비 증가 */
 }
 .sidebar a {
     padding: 10px;
