@@ -116,15 +116,21 @@ header > h1 {
     height: 150px;
 }
 .nextBtn {
-    width: 100px;
+    position: relative;
+    left: 450px;
+    bottom: 40px;
+    width: 90px;
     height: 50px;
-    background: skyblue;
+    background: #ffffff
 }
 
 #submitIQ {
-    width: 100px;
+    position: relative;
+    left: 450px;
+    bottom: 40px;
+    width: 90px;
     height: 50px;
-    background: skyblue;
+    background: #ffffff
 }
 
 /* 라디오 버튼과 글씨 간격 */
