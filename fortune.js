@@ -12,6 +12,9 @@ $(document).ready(function() {
         setTimeout(function() {
         $('<div class="fortuneSecondimage"><img src="./img/fortunecookieBreak.png" alt="Temporary Fortune Cookie"></div>').insertAfter('.container').hide().fadeIn(1000); // 임시 포춘쿠키 이미지 출력
         }, 1000);
+        setTimeout(function() {
+        $('<div class="폭죽배경"><img src="./img/폭죽.gif" alt="Temporary Fortune Cookie"></div>').insertAfter('.container').hide().fadeIn(1000); // 임시 포춘쿠키 이미지 출력
+        }, 1000);
             
             setTimeout(function() {
                 $('.fortuneSecondimage').fadeOut(500); // 임시 포춘쿠키 이미지 사라짐
