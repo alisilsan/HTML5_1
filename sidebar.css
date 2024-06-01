@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #666; /* 사이드바의 배경색 */
+    background-color: #574672; /* 사이드바의 배경색 */
     transition: width 0.5s; /* 사이드바 너비 변경 애니메이션 */
     overflow-x: hidden; /* 너비가 작아질 때 스크롤이 생기지 않도록 설정 */
     z-index: 999;
@@ -20,7 +20,8 @@
     padding: 10px;
     text-decoration: none;
     font-size: 40px;
-    margin: 20px;
+    margin: 10px;
+    margin-left: 50px;
     font-weight: bold;
     color: transparent; /* 글자를 투명하게 설정하여 숨김 */
     display: block;
@@ -35,6 +36,7 @@
 }
 .sidebar img {
     position: relative;
+    margin-top: 10px;
     margin-left: 50px;
 }
 .sidebar > ul {
@@ -52,10 +54,15 @@
 }
 .sidebar > ul > li:hover > ul {
     display: block; /*호버시 메뉴 열리게*/
+    position: absolute;
 }
 .sidebar > ul > li:hover > ul a {
     list-style: none;
-    color: aquamarine;
+    color: #fed7be;
     font-size: 20px;
+    
+}
+.sidebar > ul > li:hover > ul a:hover {
+    background-color: #333; /* 마우스 호버시 링크의 배경색 */
     
 }
