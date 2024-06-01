@@ -19,7 +19,9 @@
     margin-left: 50px;
     padding: 10px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 40px;
+    margin: 20px;
+    font-weight: bold;
     color: transparent; /* 글자를 투명하게 설정하여 숨김 */
     display: block;
 }
@@ -27,12 +29,13 @@
     color: #969bd7; /* hover 상태일 때 글자 색상을 보이도록 변경 */
 }
 .sidebar .category {
+    position: fixed;
     margin-top: 10px;
     margin-left: 10px;
 }
 .sidebar img {
+    position: relative;
     margin-left: 50px;
-    display: block;
 }
 .sidebar > ul {
     list-style: none;
@@ -50,14 +53,9 @@
 .sidebar > ul > li:hover > ul {
     display: block; /*호버시 메뉴 열리게*/
 }
-/* 사이드바 너비의 80%만큼 왼쪽으로 이동 */
-.side-bar {
-    border-radius: 20px;
-    transform: translate(calc(var(--side-bar-width) * -0.8), 0);  /* X축 이동, Y축 고정 */
-    transition: .5s;
-  }
-  
-  /* 마우스 인식 시 원래의 위치로 이동 */
-  .side-bar:hover {
-    transform: translate(-20px, 0);   /* 둥근 모서리의 너비만큼 X축 이동, Y축 고정 */
-  }
+.sidebar > ul > li:hover > ul a {
+    list-style: none;
+    color: aquamarine;
+    font-size: 20px;
+    
+}
