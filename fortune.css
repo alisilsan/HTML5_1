@@ -1,3 +1,24 @@
+:root {
+    --background-image: url(./img/마법책.png);
+    --background-opacity: 0.7;
+}
+
+body::before {
+    content: ""; /* 가상 요소 내용*/
+    position: fixed;
+    top: 0;
+    bottom: 80px;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    background-image: var(--background-image); /* 'var'는 변수 값 가져오기*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: var(--background-opacity); /* 'var'는 변수 값 가져오기*/
+    z-index: -1;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -49,6 +70,17 @@
 .fortuneSecondimage {
     transform: translate(10%, -25%);
  /* #fortune-cookie와 같은 위치로 이동 */
+}
+
+.폭죽배경 {
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(50%, -50%);
+ /* #fortune-cookie와 같은 위치로 이동 */
+    width: 80%;
+    height: auto;
+    z-index: 999;
 }
 
 .randomFortune {
