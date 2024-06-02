@@ -14,13 +14,11 @@ $(document).ready(function() {
         $('<div class="fortuneSecondimage"><img src="./img/fortunecookieBreak.png" alt="Temporary Fortune Cookie"></div>').insertAfter('.container').hide().fadeIn(1000); // 임시 포춘쿠키 이미지 출력
         }, 1000);
 
-        
         // // 눌렀을떄 폭죽 배경 이미지 추가 //
         // setTimeout(function() {
         // $('<div class="폭죽배경"></div>').appendTo('body').insertAfter('.fortuneSecondimage').hide().fadeIn(1000);
         // }, 1000);
         
-            
         setTimeout(function() {
             $('.fortuneSecondimage').fadeOut(500); // 임시 포춘쿠키 이미지 사라짐
         // 랜덤으로 운세 쪽지 출력

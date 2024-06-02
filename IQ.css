@@ -244,7 +244,8 @@ label{
 }
 .modal .modal_popup .close_btn {
     /*모달 닫기버튼 css*/
-    padding: 10px 20px;
+    float: left;
+    padding: 5px 20px;
     background-color: rgb(116, 0, 0);
     border: none;
     border-radius: 5px;
@@ -255,7 +256,20 @@ label{
 
 .modal .modal_popup .reset_btn {
     /*모달 닫기버튼 css*/
-    padding: 10px 20px;
+    float: left;
+    padding: 5px 20px;
+    background-color: rgb(116, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.modal .modal_popup .refresh_btn {
+    /*모달 닫기버튼 css*/
+    float: left;
+    padding: 5px 20px;
     background-color: rgb(116, 0, 0);
     border: none;
     border-radius: 5px;
@@ -277,7 +291,15 @@ label{
     /*모달 닫기버튼 위치*/
     position: absolute;
     top: 70%;
-    left: 30%;
+    left: 25%;
+    margin-left: -33px;
+}
+
+.refresh_btn {
+    /*모달 닫기버튼 위치*/
+    position: absolute;
+    top: 70%;
+    left: 43%;
     margin-left: -33px;
 }
 
@@ -285,7 +307,7 @@ label{
     /*모달 닫기버튼 위치*/
     position: absolute;
     top: 70%;
-    left: 60%;
+    left: 75%;
     margin-left: -33px;
 }
 

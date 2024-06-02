@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
    // 모달 관련 코드
    const modal = document.querySelector(".modal");
    const copyButton = document.querySelector(".copy-btn");
+   const refreshButton = document.querySelector(".refresh_btn");
    const modalOpen = document.querySelector(".modal_btn");
    const modalClose = document.querySelector(".close_btn");
    const modalReset = document.querySelector(".reset_btn");
@@ -118,6 +119,13 @@ document.addEventListener('DOMContentLoaded', () => {
        // index.html로 이동
        window.location.href = 'index.html';
    });
+
+   // 닫기 버튼을 눌렀을 때 모달 팝업이 닫힘
+   refreshButton.addEventListener("click", function () {
+        // index.html로 이동
+        window.location.href = 'IQ.html';
+    });
+
 
    // 현재 페이지의 URL 가져와서 input 태그의 값으로 설정
    urlInput.value = nowUrl;
