@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mbti_result.css">
+</head>
+<body>
+    <div id="result-box">
+        <p id="result"></p>
+        <img id="result-image" src="../img/MBTI결과/ENTP.png" style="width: 200px; height: 200px;">
+        <div id="result-description">당신은 ESTJ 유형입니다. ESTJ 유형은 외향적이며 실용적인 경향이 있습니다.</div> <!-- 결과 설명을 표시할 엘리먼트 -->
+        <!--모달 팝업-->
+        <div class="modal">
+            <div class="modal_popup">
+                <div>
+                    <h3>링크복사 창</h3>
+                    <input type="text" id="urlInput" class="urlInput" value="" />
+                    <button type="button" class="copy-btn" onclick="copyUrl()">링크 복사</button>
+                    <button type="button" class="close_btn">닫기</button>
+                    <button type="button" class="reset_btn">메인으로 이동</button>
+                </div>
+            </div>
+        </div>
+        <!--end 모달 팝업-->
+        <main>
+            <section>
+                <button type="button" class="modal_btn">클릭시 팝업</button>
+            </section>
+        </main>
+    </div>
+    </div>
+    <script src="mbti_result.js"></script>    
+</body>
+</html>

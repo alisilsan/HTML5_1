@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+img{
+    width: 300px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#testStartButton {
+    background-color: #1e00ff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 10px;   
+    padding: 20px 40px;
+    margin: 20px auto;
+    cursor: pointer;
+    display: block;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    transition: transform 0.3s;   /* 호버 효과에 애니메이션을 부드럽게 적용 */
+  }
+
+.container {
+    text-align: center;
+}
+
+#test-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#test-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#answer-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}

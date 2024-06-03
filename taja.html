@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="taja.css">
+</head>
+<body>
+     <!-- 타자 게임 예시 -->
+     <div id="testStart-container">
+        <h1>줄임말 테스트</h1>
+        <img src="./img/컵.gif" alt="#">
+        <button id="testStartButton">테스트 시작</button>
+    </div>
+        <div id="test-container">
+            <img id="test-image" src="images/image1.jpg" alt="Test Image">
+            <input type="text" id="answer-input" placeholder="Type your answer here">
+            <button id="submit-btn">Submit</button>
+            <div id="result"></div>
+        </div>
+        <div id="final-result" class="hidden">
+            <h2 id="result-message"></h2>
+            <p>맞춘 개수는 20개 중 <span id="correct-count">0</span> 개입니다.</p>
+        </div>
+    <script src="taja.js"></script>
+</body>
+</html>
