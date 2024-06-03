@@ -23,7 +23,7 @@ modalClose.addEventListener("click", function () {
 // 닫기 버튼을 눌렀을 때 모달 팝업이 닫힘
 modalReset.addEventListener("click", function () {
     // index.html로 이동
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
 });
 
 // 닫기 버튼을 눌렀을 때 모달 팝업이 닫힘
