@@ -24,8 +24,8 @@ const questions = [
     { image: "./img/taja/taja_8.png", answer: "점심 메뉴 추천" },
     { image: "./img/taja/taja_9.png", answer: "Too Much Information" },
     { image: "./img/taja/taja_10.png", answer: "억지 텐션" },
-    { image: "./img/taja/taja_11.png", answer: "자존심 강한 두 천재의 대결" },
-    { image: "./img/taja/taja_12.png", answer: "불보고 멍때리기" },
+    { image: "./img/taja/taja_11.png", answer: "자존심 강한 두 천재의 싸움" },
+    { image: "./img/taja/taja_12.png", answer: "불보며 멍때리기" },
     { image: "./img/taja/taja_13.png", answer: "얼어 죽어도 아이스아메리카노" },
     { image: "./img/taja/taja_14.png", answer: "자연스러운 만남 추구" },
     { image: "./img/taja/taja_15.png", answer: "소소하지만 확실한 행복" },
@@ -33,7 +33,7 @@ const questions = [
     { image: "./img/taja/taja_17.png", answer: "무엇이든 물어보세요" },
     { image: "./img/taja/taja_18.png", answer: "갑자기 분위기 싸해짐" },
     { image: "./img/taja/taja_19.png", answer: "아이스 바닐라 라떼" },
-    { image: "./img/taja/taja_20.png", answer: "구독 취소" }
+    { image: "./img/taja/taja_20.png", answer: "좋아요 댓글 구독 알림설정" }
     // ...총 20개의 문제6 여기 추가
     
 ];
