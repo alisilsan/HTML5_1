@@ -14,9 +14,9 @@ function startTest() {
 }
 
 const questions = [
-    { image: "images/image1.jpg", answer: "스스로 불러온 재앙" },
-    { image: "images/image2.jpg", answer: "별걸 다 줄이네" },
-    { image: "images/image3.jpg", answer: "중요한건 꺾이지 않는 마음" },
+    { image: "./img/taja_1.png", answer: "스스로 불러온 재앙" },
+    { image: "./img/taja_2.png", answer: "별걸 다 줄이네" },
+    { image: "./img/taja_3.png", answer: "중요한건 꺾이지않는 마음" },
     { image: "images/image4.jpg", answer: "answer4" },
     { image: "images/image5.jpg", answer: "answer5" },
     { image: "images/image6.jpg", answer: "answer6" },
