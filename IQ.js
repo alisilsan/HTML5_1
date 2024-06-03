@@ -71,9 +71,16 @@ document.addEventListener('DOMContentLoaded', () => {
             question.style.display = 'none'; // 모든 질문을 숨김
         });
 
-        resultDisplay.style.display = 'block';
-        IQscoreDisplay.textContent = score;
-        document.body.classList.add('started');
+        localStorage.setItem('iqScore', score); // 점수를 localStorage에 저장
+
+        // 결과에 따라 다른 HTML로 이동
+        if (score >= 130 && score <= 100) {
+            window.location.href = `./iq_result/high_iq_result.html`;
+        } else if (score >= 99 && score <= 51) {
+            window.location.href = `./iq_result/medium_iq_result.html`;
+        } else {
+            window.location.href = `./iq_result/low_iq_result.html`;
+        }
     }
 
     // 시작 버튼 클릭 이벤트
@@ -92,5 +99,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // 제출 버튼 클릭 이벤트
     document.getElementById('submitIQ').addEventListener('click', submitIQTest);
 });
-
- 
