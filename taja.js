@@ -85,5 +85,8 @@ function showFinalResult() {
     document.getElementById('result-message').textContent = resultMessage;
 }
 
+
+
 // 처음 문제 로드
 loadNextQuestion();
+
