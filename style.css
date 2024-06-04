@@ -9,6 +9,7 @@ html, body {
     padding: 0;
 }
 #wrap {
+    background-image: url("./img/galaxy.gif");
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -75,7 +76,8 @@ body{
 }
 */
 #slide{
-    width:100%;
+    width:90%;
+    margin: 20px auto;
     height:1000px;
     /* background-color: antiquewhite; */
 }

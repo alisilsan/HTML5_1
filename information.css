@@ -5,7 +5,7 @@ body {
     height: 100%;
 }
 body {
-    background-image: url("./img/background3.png");
+    background-image: url("./img/galaxy.gif");
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
@@ -152,4 +152,10 @@ body {
     top: 70%;
     left: 50%;
     margin-left: -33px;
+}
+
+h2, p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(189, 168, 235);
 }
