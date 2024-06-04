@@ -64,6 +64,11 @@ header > #title {
     text-align: center;
 }
 
+#startIQ{
+    position: relative;
+    right: 250px;
+    top: 100px;
+}
 
 #header > #title > h1 {
     margin-left: 100px;
