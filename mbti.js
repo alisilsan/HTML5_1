@@ -183,7 +183,6 @@ function handleAnswer(score) {
 
 function showResult() {
     const mbti = `${scores.E > scores.I ? "E" : "I"}${scores.S > scores.N ? "S" : "N"}${scores.T > scores.F ? "T" : "F"}${scores.J > scores.P ? "J" : "P"}`;
-    alert(`Your MBTI type is: ${mbti}`);
     window.location.href = `./mbti_result/${mbti}.html`;
 }
 
