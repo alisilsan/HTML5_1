@@ -11,13 +11,10 @@ $(document).ready(function() {
         $('.fortune-info').fadeOut();
         
         setTimeout(function() {
-        $('<div class="fortuneSecondimage"><img src="./img/fortunecookieBreak.png" alt="Temporary Fortune Cookie"></div>').insertAfter('.container').hide().fadeIn(1000); // 임시 포춘쿠키 이미지 출력
+        $('<div class="fortuneSecondimage"><img src="./img/fortunecookieBreak.png" alt="Temporary Fortune Cookie"></div>').insertAfter('.container').hide().fadeIn(1000);
+        console.log("123") // 임시 포춘쿠키 이미지 출력
         }, 1000);
 
-        // // 눌렀을떄 폭죽 배경 이미지 추가 //
-        // setTimeout(function() {
-        // $('<div class="폭죽배경"></div>').appendTo('body').insertAfter('.fortuneSecondimage').hide().fadeIn(1000);
-        // }, 1000);
         
         setTimeout(function() {
             $('.fortuneSecondimage').fadeOut(500); // 임시 포춘쿠키 이미지 사라짐
@@ -26,11 +23,15 @@ $(document).ready(function() {
             var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
             $('<img src="' + randomFortune + '" alt="Fortune" class="randomFortune">').appendTo('body').fadeOut(0).fadeIn(3000); // randomfortune 클래스명 추가
             setTimeout(function() {
-            $('<button class="restart-button">화면 출력</button>').appendTo('body'); // 처음으로 돌아가는 버튼 출력
+            $('<button class="restart-button">다시 시작</button>').appendTo('body'); // 처음으로 돌아가는 버튼 출력
             // 처음으로 돌아가는 버튼 클릭 이벤트
             $('.restart-button').click(function() {
             location.reload(); // 페이지 새로고침
             });
+            // $('<button class="reset-button">메인으로 이동</button>').appendTo('body'); // 처음으로 돌아가는 버튼 출력
+            // $('.reset-button').click(function() {
+            // location.window,href= "./index.html";
+            // });
             }, 5000);
         }, 3000);
         
