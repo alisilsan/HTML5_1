@@ -34,8 +34,6 @@ const questions = [
     { image: "./img/taja/taja_18.png", answer: "갑자기 분위기 싸해짐" },
     { image: "./img/taja/taja_19.png", answer: "아이스 바닐라 라떼" },
     { image: "./img/taja/taja_20.png", answer: "좋아요 댓글 구독 알림설정" }
-    // ...총 20개의 문제6 여기 추가
-    
 ];
 
 let currentQuestionIndex = 0;
@@ -68,25 +66,33 @@ function loadNextQuestion() {
 }
 
 function showFinalResult() {
-    document.getElementById('test-container').style.display = "none";
-    document.getElementById('final-result').style.display = "block";
-    document.getElementById('correct-count').textContent = correctCount;
+    localStorage.setItem('correctCount', correctCount); // 점수를 localStorage에 저장
 
-    let resultMessage = '';
+    let resultPage = '';
     if (correctCount >= 12) {
-        resultMessage = '대단해요! 혹시 MZ 신가요?';
+        resultPage = `./taja_result/high_taja_result.html`;
     } else if (correctCount >= 8) {
-        resultMessage = '좋아요! 유행에는 따라가는거 같네요~';
+        resultPage = `./taja_result/well_taja_result.html`;
     } else if (correctCount >= 4) {
-        resultMessage = '흠... 조금 유행에 뒤쳐지시는거 같은데요?';
+        resultPage = `./taja_result/medium_taja_result.html`;
     } else {
-        resultMessage = '킁킁.. 어디서 홍삼캔디 냄새 나지 않아요?';
+        resultPage = `./taja_result/low_taja_result.html`;
     }
-    document.getElementById('result-message').textContent = resultMessage;
+    window.location.href = resultPage;
 }
+    
+document.addEventListener('DOMContentLoaded', (event) => {
+    const answerInput = document.getElementById('answer-input');
+    const submitBtn = document.getElementById('submit-btn');
 
+    // 엔터키가 눌렸을 때 submit 버튼 클릭 이벤트 트리거
+    answerInput.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // 기본 엔터키 동작 방지
+            submitBtn.click(); // submit 버튼 클릭 이벤트 트리거
+        }
+    });
 
-
-// 처음 문제 로드
-loadNextQuestion();
-
+    // 처음 문제 로드
+    loadNextQuestion();
+});

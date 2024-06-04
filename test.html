@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IQ Test</title>
+        <link rel="stylesheet" href="IQ.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <script src="IQ.js"></script>
+    </head>
+    <body>
+        <!-- 초기 시작 화면 -->
+        <div id="IQstart">
+            <h1>IQ 테스트</h1>
+            <button id="startIQ">Start IQ Test</button>
+        </div>
+        <header id="header" style="display: none">
+            <div id="title">
+                <h1>IQ테스트</h1>
+                <!--테스트 제목-->
+            </div>
+            <div id="timerContainer">
+                <!-- <i class="fa-solid fa-clock fa-3x"></i> 타이머 옆에 시계 모양 이미지 추가 -->
+                <div id="timer">05:00</div>
+                <!-- 타이머 -->
+                <img src="./img/쳇바퀴.gif" alt="#" id="timerimage" width="50" />
+            </div>
+            <div id="timeBarContainer">
+                <div id="timeBar"></div>
+                <!-- 시간이 흐를 때마다 점차 사라지는 막대 -->
+            </div>
+        </header>
+        <!-- 문제 화면 -->
+        <!-- 문제 1-->
+        <section>
+            <article>
+                <div id="question" class="question" style="display: none">
+                    <div class="문제">
+                        <!--테스트 질문-->
+                        <h1><span class="circle">1/10</span> ?모양에는 어떤 모양이 들어가나요?</h1>
+                    </div>
+                    <div class="선택">
+                        <!--라디오 박스-->
+                        <img src="./img/iq/question1.png" alt="img1" />
+                        <table>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q1" value="0" />
+                                        <img src="./img/iq/question1_문제1.PNG" alt="Option 1" />
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q1" value="0" />
+                                        <img src="./img/iq/question1_문제2.PNG" alt="Option 2" />
+                                    </label>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q1" value="10" />
+                                        <img src="./img/iq/question1_문제3.PNG" alt="Option 3" />
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q1" value="0" />
+                                        <img src="./img/iq/question1_문제4.PNG" alt="Option 4" />
+                                    </label>
+                                </th>
+                            </tr>
+                            <th>
+                                <div class="nextBtn"><img src="./img/핑거스냅 타노스.png" /></div>
+                            </th>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- 문제 2-->
+        <section>
+            <article>
+                <div class="question" style="display: none">
+                    <div class="문제">
+                        <h1><span class="circle">2/10</span> ?모양에는 어떤 모양이 들어가나요?</h1>
+                    </div>
+                    <div class="선택">
+                        <!--라디오 박스-->
+                        <img src="./img/iq/question2.PNG" alt="img1" />
+                        <table>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q2" value="10" />
+                                        <img src="./img/iq/question2_문제1.PNG" alt="Option 1" />
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q2" value="0" />
+                                        <img src="./img/iq/question2_문제2.PNG" alt="Option 2" />
+                                    </label>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q2" value="0" />
+                                        <img src="./img/iq/question2_문제3.PNG" alt="Option 3" />
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q2" value="0" />
+                                        <img src="./img/iq/question2_문제4.PNG" alt="Option 4" />
+                                    </label>
+                                </th>
+                            </tr>
+                            <th>
+                                <div class="nextBtn"><img src="./img/핑거스냅 타노스.png" /></div>
+                            </th>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- 문제 3-->
+        <section>
+            <article>
+                <div class="question" style="display: none">
+                    <div class="문제">
+                        <h1><span class="circle">3/10</span> ???</h1>
+                    </div>
+                    <div class="선택">
+                        <!--라디오 박스-->
+                        <img src="./img/iq/question3.PNG" alt="img1" />
+                        <table>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q3" value="10" />
+                                        <img src="./img/iq/question3_문제1.PNG" alt="Option 1" />
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q3" value="0" />
+                                        <img src="./img/iq/question3_문제2.PNG" alt="Option 2" />
+                                    </label>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q3" value="0" />
+                                        <img src="./img/iq/question3_문제3.PNG" alt="Option 3" />
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q3" value="0" />
+                                        <img src="./img/iq/question3_문제4.PNG" alt="Option 4" />
+                                    </label>
+                                </th>
+                            </tr>
+                            <th>
+                                <div class="nextBtn"><img src="./img/핑거스냅 타노스.png" /></div>
+                            </th>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- 문제 4-->
+        <section>
+            <article>
+                <div class="question" style="display: none">
+                    <div class="문제">
+                        <h1><span class="circle">4/10</span> ?모양에는 어떤 모양이 들어가나요?</h1>
+                    </div>
+                    <div class="선택">
+                        <!--라디오 박스-->
+                        <img src="./img/iq/question4.PNG" alt="img1" />
+                        <table>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q4" value="0" />
+                                        <img src="./img/iq/question4_문제1.PNG" alt="Option 1" />
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q4" value="0" />
+                                        <img src="./img/iq/question4_문제2.PNG" alt="Option 2" />
+                                    </label>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q4" value="0" />
+                                        <img src="./img/iq/question4_문제3.PNG" alt="Option 3" />
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q4" value="10" />
+                                        <img src="./img/iq/question4_문제4.PNG" alt="Option 4" />
+                                    </label>
+                                </th>
+                            </tr>
+                            <th>
+                                <div class="nextBtn"><img src="./img/핑거스냅 타노스.png" /></div>
+                            </th>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- 문제 5-->
+        <section>
+            <article>
+                <div class="question" style="display: none">
+                    <div class="문제">
+                        <h1><span class="circle">5/10</span> 다음 그림에 들어가 있는 정삼각형의 수는?</h1>
+                    </div>
+                    <div class="선택">
+                        <!--라디오 박스-->
+                        <img src="./img/iq/question5.PNG" alt="img1" />
+                        <table>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q5" value="0" />
+                                        <img src="./img/iq/question5_문제1.PNG" alt="Option 1" />
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q5" value="0" />
+                                        <img src="./img/iq/question5_문제2.PNG" alt="Option 2" />
+                                    </label>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q5" value="10" />
+                                        <img src="./img/iq/question5_문제3.PNG" alt="Option 3" />
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <input type="radio" name="q5" value="0" />
+                                        <img src="./img/iq/question5_문제4.PNG" alt="Option 4" />
+                                    </label>
+                                </th>
+                            </tr>
+                            <th>
+                                <div class="nextBtn"><img src="./img/핑거스냅 타노스.png" /></div>
+                            </th>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </body>
+</html>
