@@ -5,11 +5,12 @@
 }
 
 html, body {
+    background-color: lavender;
     margin: 0;
     padding: 0;
 }
 #wrap {
-    background-image: url("./img/galaxy.gif");
+    
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -81,26 +82,35 @@ body{
     height:1000px;
     /* background-color: antiquewhite; */
 }
+/* 푸터 */
 #footer{
     width:100%;
-    height:50px;
-    background-color: brown;
+    height:100px;
+    background-color: #333;
 }
+/* 1. 로고 */
 #footer>#logo{
     float:left;
     width:400px;
-    height:50px;
+    height:100px;
     background-color: #333;
 }
 #footer>#logo>img{
     float:left;
-    width:400px;
-    height:50px;
+    width:320px;
+    height:80px;
     background-color: #333;
+    padding-left: 80px;
+    padding-top: 5px;
 }
-#copyright{
+/* 2. 카피라이트 */
+#copyright {
     float:left;
-    width:calc(100% - 400px);
-    height:50px;
+    height:100px;
     background-color: #333;
+    color : lavender;
+}
+#copyright p{
+    padding-left: 60px;
+    padding-top: 8px;
 }

@@ -30,6 +30,7 @@
   * {
     font-family: Pretendard;
     user-select: none;
+    text-decoration: none;
   }
   
   .list > div {
