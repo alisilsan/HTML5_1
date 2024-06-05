@@ -1,4 +1,10 @@
 /* 결과 화면 스타일 */
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.7); 
+}
+
 #result {
     text-align: center;
     font-size: 24px;
@@ -12,14 +18,35 @@
     right: 0;
     top: 0;
 }
-
+#result p{
+    width: 700px;
+    height: 140px;
+    border: 4px solid #111;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    color: rgb(27, 64, 177);
+    font-weight: bold;
+    font-size: 40px;
+    top: 450px;
+    left: 160px;
+}
+#result span{
+    text-align: center;
+    position: absolute;
+    color: #111;
+    font-weight: bold;
+    font-size: 24px;
+    top: 545px;
+    left: 330px;
+}
 #high_iq_result_img{
     position: absolute;
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
-    top: 5%;
-    left: 40%;
+    top: 0px;
+    left: 660px;
 }
 
 #medium_iq_result_img{
@@ -27,8 +54,8 @@
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
-    top: 10%;
-    left: 42%;
+    top: 150px;
+    left: 710px;
 }
 
 #low_iq_result_img{
@@ -36,26 +63,23 @@
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
-    top: 10%;
-    left: 42%;
+    top: 50px;
+    left: 38%;
 }
 
-p{
-    position: absolute;
-    top: 950%;
-    left: 42%;
-}
 
 .modal_btn {
     /*누르면 모달 나오는 버튼*/
     position: absolute;
-    top: 1200%;
-    left: 46%;
+    top: 1460%;
+    left: 43%;
     display: block;
     margin: auto;
     padding: 10px 20px;
     background-color: royalblue;
-    border: none;
+    border: 1px solid #111;
+    font-size: 16px;
+    font-weight: bold;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
