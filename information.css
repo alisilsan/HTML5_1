@@ -34,8 +34,9 @@ body {
     position: relative;
     width: 1000px;
     height: 800px;
+    top: 10%;
     left: 23%;
-    background-image: url("./img/info_1.png");
+    background-image: url("./img/info_2.png");
     background-repeat: no-repeat;
 }
 
@@ -146,14 +147,13 @@ h2 {
 span {
     font-family: 'Times New Roman';
     font-weight: bold;
-
-    color: rgb(231, 101, 101);
+    color: rgb(189, 168, 235);
 }
 p {
     font-family: 'Times New Roman';
     font-weight: bold;
     font-size: 70%;
-    color: rgb(189, 168, 235);
+    color: #e0bf4c;
 }
 button a {
     font-family: 'Times New Roman';
@@ -171,7 +171,7 @@ button {
     float: right;
     padding: 2px 2px;
     background-color: #333;
-    border: 1px solid rgb(189, 168, 235);
+    border: 1px solid #e0bf4c;
     border-radius: 2px;
 }
 
