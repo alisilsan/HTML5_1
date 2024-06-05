@@ -111,7 +111,7 @@ body::before {
 .restart-button {
     position: fixed;
     top: calc(50% + 200px);
-    left: 50%;
+    left: 53%;
     transform: translateX(-20%);
     width: 200px;
     height: 50px;
@@ -119,15 +119,15 @@ body::before {
     font-size: 100%;
     border: none;
     border-radius: 5px;
-    background-color: pink;
-    color: black;
+    background-color: rgb(168, 102, 154);
+    color: white;
     cursor: pointer;
     z-index: 1000;
 }
 .reset-button {
     position: fixed;
     top: calc(50% + 200px);
-    left: 50%;
+    left: 43%;
     transform: translateX(-40%);
     width: 200px;
     height: 50px;
@@ -135,8 +135,8 @@ body::before {
     font-size: 100%;
     border: none;
     border-radius: 5px;
-    background-color: pink;
-    color: black;
+    background-color: rgb(168, 102, 154);
+    color: white;
     cursor: pointer;
     z-index: 1000;
 }

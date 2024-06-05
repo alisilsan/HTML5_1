@@ -128,7 +128,7 @@ body {
 .modal .modal_popup {
     transform: scale(0.1);                    /*초기 크기*/
     padding: 20px;
-    background: transparent;
+    background: #555;
     border-radius: 20px;
     transition: transform 0.3s;
 }
@@ -154,8 +154,63 @@ body {
     margin-left: -33px;
 }
 
-h2, p {
-    font-family: 'Times New Roman', Times, serif;
+h2 {
+    font-family: 'Times New Roman';
     font-weight: bold;
     color: rgb(189, 168, 235);
+}
+span {
+    font-family: 'Times New Roman';
+    font-weight: bold;
+
+    color: rgb(231, 101, 101);
+}
+p {
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 70%;
+    color: rgb(189, 168, 235);
+}
+a {
+    font-family: 'Times New Roman';
+    font-size: 70%;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+sub {
+    color: rgb(255, 97, 97);
+}
+button {
+    margin-top: 5px;
+    float: right;
+    padding: 2px 2px;
+    background-color: #333;
+    border: 1px solid rgb(189, 168, 235);
+    border-radius: 2px;
+}
+
+#pink {
+    background-color: pink;
+    color: white;
+    padding: 2px;
+    font-size: 100%;
+    border-radius: 2px;
+}
+
+#green {
+    background-color: rgb(71, 240, 108);
+    color: white;
+    padding: 2px;
+    font-size: 100%;
+    border-radius: 2px;
+}
+
+#blue {
+    background-color: rgb(196, 192, 255);
+    color: white;
+    padding: 2px;
+    font-size: 100%;
+    border-radius: 2px;
 }
