@@ -1,18 +1,3 @@
-header {
-    background-color: #ffffff;
-    padding: 20px;
-    border: 2px solid rgb(214, 212, 212);
-}
-
-header > #title {
-    border: 2px solid rgb(214, 212, 212);
-}
-#header > #title > h1 {
-    margin-left: 100px;
-    text-align: center;
-}
-
-
 /* 결과 화면 스타일 */
 #result {
     text-align: center;
@@ -21,8 +6,6 @@ header > #title {
     font-weight: bold;
     width: 1000px;
     height: auto;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(214, 212, 212);
     padding: 20px;
     margin: 20px auto;
     position: relative;
@@ -30,10 +13,46 @@ header > #title {
     top: 0;
 }
 
+#high_iq_result_img{
+    position: absolute;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 5%;
+    left: 40%;
+}
+
+#medium_iq_result_img{
+    position: absolute;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 10%;
+    left: 42%;
+}
+
+#low_iq_result_img{
+    position: absolute;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 10%;
+    left: 42%;
+}
+
+p{
+    position: absolute;
+    top: 950%;
+    left: 42%;
+}
+
 .modal_btn {
     /*누르면 모달 나오는 버튼*/
+    position: absolute;
+    top: 1200%;
+    left: 46%;
     display: block;
-    margin: 40px auto;
+    margin: auto;
     padding: 10px 20px;
     background-color: royalblue;
     border: none;
