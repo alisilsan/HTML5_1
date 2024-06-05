@@ -90,7 +90,7 @@ body {
 
 
 .swiper-slide.selected img {
-    border-color: blueviolet;            /*선택시 테두리 색*/
+    border-color: #e0bf4c;            /*선택시 테두리 색*/
 }
 .modal {
     display: flex;
