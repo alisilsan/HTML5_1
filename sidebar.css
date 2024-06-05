@@ -27,7 +27,7 @@
     display: block;
 }
 .sidebar:hover a {
-    color: #969bd7; /* hover 상태일 때 글자 색상을 보이도록 변경 */
+    color: #e0bf4c; /* hover 상태일 때 글자 색상을 보이도록 변경 */
 }
 .sidebar .category {
     position: fixed;
