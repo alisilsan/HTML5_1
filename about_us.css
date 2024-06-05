@@ -17,7 +17,7 @@ article {
 }
 
 html, body {
-    background-color: lavender;
+    background-image: url("./img/galaxy.gif");
     margin: 0;
     padding: 0;
 }

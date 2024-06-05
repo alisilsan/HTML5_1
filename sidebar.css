@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333; /* 사이드바의 배경색 */
+    background-color: #555; /* 사이드바의 배경색 */
     opacity: 0.8;
     transition: width 0.5s; /* 사이드바 너비 변경 애니메이션 */
     overflow-x: hidden; /* 너비가 작아질 때 스크롤이 생기지 않도록 설정 */
