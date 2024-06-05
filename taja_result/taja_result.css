@@ -19,6 +19,7 @@
   }
 
 body {
+    position: relative;
     font-family: Arial, sans-serif;
     background: rgba(0, 0, 0, 0.7); 
     display: flex;
@@ -29,12 +30,45 @@ body {
     margin: 0;
 }
 
-img{
-    width: 500px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+#high_result_img{
+    position: absolute;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 5%;
+    left: 40%;
 }
 
+#well_result_img{
+    position: absolute;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 5%; 
+    left: 40%;
+}
+#medium_result_img{
+    position: absolute;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 5%; 
+    left: 38%;
+}
+
+#low_result_img{
+    position: absolute;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 5%; 
+    left: 40%;
+}
+
+#final-result{
+    position: absolute;
+    top: 50%
+}
 
 #result {
     margin-top: 10px;
@@ -45,8 +79,11 @@ img{
 
 .modal_btn {
     /*누르면 모달 나오는 버튼*/
+    position: absolute;
+    top: 70%;
+    left: 46%;
     display: block;
-    margin: 40px auto;
+    margin: auto;
     padding: 10px 20px;
     background-color: royalblue;
     border: none;
