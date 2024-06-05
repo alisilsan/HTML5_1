@@ -30,13 +30,17 @@ body {
 }
 
 img{
+    background-color: #fff;
+    border: 3px solid #111;
+    border-radius: 5px;
     width: 500px;
+    padding: 20px 20px;
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
 #testStartButton {
-    background-color: #1e00ff;
+    background-color: rgb(71, 240, 108);
     color: #fff;
     font-size: 20px;
     font-weight: bold;
@@ -55,8 +59,9 @@ img{
 }
 
 #test-container {
-    background-color: #fff;
+    background-color: rgb(243, 255, 245);
     padding: 20px;
+    border: 5px dotted #111;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -68,6 +73,8 @@ img{
 }
 
 #answer-input {
+    border: 4px solid rgb(71, 240, 108);
+    border-radius: 5px;
     width: 80%;
     padding: 10px;
     margin: 10px 0;
@@ -75,8 +82,13 @@ img{
 }
 
 #submit-btn {
+    border: 4px solid #aba;
+    border-radius: 5px;
     padding: 10px 20px;
+    font-weight: bold;
     font-size: 16px;
+    color: #fff;
+    background-color: #333;
     cursor: pointer;
 }
 
