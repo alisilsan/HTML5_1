@@ -88,7 +88,7 @@ header > #title {
     float: left;
     background-color: #fff;
     width: 30%;
-    height: 600px;
+    height: 60%;
     padding: 0px 100px;
     border: 2px solid rgb(214, 212, 212);
     margin: 0  50px;
@@ -99,7 +99,7 @@ header > #title {
     float: right;
     width: 40%;
     font-size: 20px;
-    height: 600px;
+    height: 60%;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(214, 212, 212);
     padding: 20px;
@@ -113,18 +113,18 @@ header > #title {
 /* 4지선다 */
 .선택 th{
     list-style: none;
-    padding: 0;
+    padding: 17px;
 }
 .선택 th img{
-    width: 150px;
-    height: 150px;
+    width: 60%;
+    height: 60%;
 }
 .nextBtn {
     position: absolute;
-    left: 600px;
-    bottom: 70px;
-    width: 100px;
-    height: 40px;
+    left: 50%;
+    bottom: -27%;
+    width: 50%;
+    height: 50%;
     background: transparent;
 }
 
