@@ -47,20 +47,22 @@ body {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 20px;
-    border: 2px solid rgb(214, 212, 212);
+    border: 2px solid #111;
 }
 
 header > #title {
-    border: 2px solid rgb(214, 212, 212);
+    font-size: 150%;
+    border: 2px solid #111;
 }
 
 #startIQ{
     background-color: blue;
     color: white;
     font-weight: bold;
-    width: 110px;
+    font-size: 100%;
+    width: 150px;
     height: 50px;
     border: none;
     border-radius: 30px 30px 30px 30px;
@@ -72,6 +74,7 @@ header > #title {
 }
 
 #IQstart {
+    font-size: 200%;
     text-align: center;
 }
 
@@ -82,7 +85,6 @@ header > #title {
 }
 
 #header > #title > h1 {
-    margin-left: 100px;
     text-align: center;
 }
 
@@ -91,7 +93,7 @@ header > #title {
 .문제{
     background-color: transparent;
     text-align: center;
-    font-size: 24px;
+    font-size: 300%;
     font-family: sans-serif;
 }
 /*5지선다 박스 속성*/
@@ -100,8 +102,8 @@ header > #title {
     background-color: #fff;
     width: 30%;
     height: 60%;
-    padding: 0px 100px;
-    border: 2px solid rgb(214, 212, 212);
+    padding: 5px 100px;
+    border: 2px solid #111;
     margin: 0  50px;
     position: relative;
 }
@@ -112,7 +114,7 @@ header > #title {
     font-size: 20px;
     height: 60%;
     background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(214, 212, 212);
+    border: 2px solid #111;
     padding: 20px;
     margin: 0 50px;
     text-align: center;
@@ -127,13 +129,15 @@ header > #title {
     padding: 15px;
 }
 .선택 th img{
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
+    padding: 17px;
+    margin: 17px;
 }
 .nextBtn img{
     position: absolute;
     right: 5%;
-    bottom: -15%;
+    bottom: -14%;
     width: 200px;
     height: 100px;
     background: transparent;
@@ -142,14 +146,6 @@ header > #title {
 /* 라디오 버튼과 글씨 간격 */
 label{
     padding-left: 10px;
-}
-/* 페이지 아래 있어도 되고 없어도 되는 부분*/
-#footer{
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    font-size: 10px;
-    background-color: gray;
 }
 
 /* 타이머 스타일 */
@@ -160,7 +156,7 @@ label{
 }
 
 #timer {
-    font-size: 32px; /* 타이머의 숫자 크기 */
+    font-size: 250%;; /* 타이머의 숫자 크기 */
     font-weight: bold; /* 타이머의 숫자 굵기 */
     color: rgb(252, 82, 82);
 }
@@ -185,9 +181,9 @@ label{
 /* 원 안의 텍스트 */
 .circle {
     display: inline-block;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
     border-radius: 50%;
     background-color: rgb(219, 115, 245);
     text-align: center;

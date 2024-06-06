@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+.cute-font-regular {
+    font-family: "Cute Font", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*{
+    font-family: "Cute Font", sans-serif;
+}
 /* 결과 화면 스타일 */
 body {
     position: relative;
-    font-family: Arial, sans-serif;
     background: rgba(0, 0, 0, 0.7); 
 }
 
@@ -21,13 +31,13 @@ body {
 #result p{
     width: 700px;
     height: 140px;
-    border: 4px solid #111;
+    border: 4px solid royalblue;
     border-radius: 5px;
     background-color: #fff;
     position: absolute;
     color: rgb(27, 64, 177);
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
     top: 450px;
     left: 160px;
 }
@@ -36,9 +46,9 @@ body {
     position: absolute;
     color: #111;
     font-weight: bold;
-    font-size: 24px;
-    top: 545px;
-    left: 330px;
+    font-size: 32px;
+    top: 560px;
+    left: 350px;
 }
 #high_iq_result_img{
     position: absolute;
@@ -46,7 +56,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     top: 0%;
-    left: 30%;
+    left: 35%;
 }
 
 #medium_iq_result_img{
@@ -71,8 +81,8 @@ body {
 .modal_btn {
     /*누르면 모달 나오는 버튼*/
     position: absolute;
-    top: 1460%;
-    left: 43%;
+    top: 1500%;
+    left: 46%;
     display: block;
     margin: auto;
     padding: 10px 20px;
@@ -106,7 +116,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -10%);
     padding: 20px;
     background: #ffffff;
     border-radius: 20px;
@@ -117,11 +127,12 @@ body {
     /*모달 닫기버튼 css*/
     float: left;
     padding: 5px 20px;
-    background-color: rgb(116, 0, 0);
+    background-color: royalblue;
     border: none;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    font-family: sans-serif;
     transition: box-shadow 0.2s;
 }
 
@@ -129,11 +140,12 @@ body {
     /*모달 닫기버튼 css*/
     float: left;
     padding: 5px 20px;
-    background-color: rgb(116, 0, 0);
+    background-color: royalblue;
     border: none;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    font-family: sans-serif;
     transition: box-shadow 0.2s;
 }
 
@@ -141,11 +153,24 @@ body {
     /*모달 닫기버튼 css*/
     float: left;
     padding: 5px 20px;
-    background-color: rgb(116, 0, 0);
+    background-color: royalblue;
     border: none;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    font-family: sans-serif;
+    transition: box-shadow 0.2s;
+}
+.modal .modal_popup .copy-btn {
+    /*모달 닫기버튼 css*/
+    float: left;
+    padding: 5px 10px;
+    background-color: royalblue;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-family: sans-serif;
     transition: box-shadow 0.2s;
 }
 
@@ -201,5 +226,6 @@ body {
 }
 h3 {
     /*모달 내 글씨*/
+    font-family: sans-serif;
     text-align: center;
 }

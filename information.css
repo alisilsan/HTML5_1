@@ -35,7 +35,7 @@ body {
     width: 800px;
     height: 800px;
     top: 10%;
-    left: 15%;
+    left: 23%;
     background-image: url("./img/info_2.png");
     background-repeat: no-repeat;
 }
@@ -46,7 +46,7 @@ body {
     height: 650px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-left: 110%;
+    margin-left: 130%;
 }
 .swiper-slide {                         /*슬라이드 이미지 설정*/       
     background-position: center;
