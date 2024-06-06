@@ -1,0 +1,46 @@
+/* patch.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    color: #e0bf4c;
+    text-align: center;
+    padding: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container ul li {
+    display:flow-root;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e0bf4c;
+    background-image: url("./img/galaxy_1.gif");
+    margin: 20px 20px;
+    padding: 10px;
+    border: 1px solid #e0bf4c;
+    cursor: pointer;
+}
+.postContent {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e0bf4c;
+    background-color: transparent;
+    margin: 0px  10px;
+    padding: 10px;
+    cursor: pointer;
+}

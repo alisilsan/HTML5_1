@@ -101,7 +101,7 @@ body{
   padding: 20px;
   background: #ffffff;
   border-radius: 20px;
-  border: 5px solid green;
+  border: 5px solid #ffbebe;
   z-index: 1;
 }
 .modal .modal_popup .close_btn {

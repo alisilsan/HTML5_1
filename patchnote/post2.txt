@@ -1,0 +1,13 @@
+1. 메인페이지 (추가)
+1.1 JS 
+- (auto슬라이드) 추가 초안 적용 
+- topbar 메뉴 간결화
+    
+1.2. about_us 페이지
+- html 수정
+- 초안 css 적용
+
+1.3. NEW PAGE 추가(설명페이지)
+- vertical 슬라이드 js 적용
+- topbar 추가
+- 초안 css 적용
