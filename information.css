@@ -32,20 +32,21 @@ body {
 }
 #nav {
     position: relative;
-    width: 1000px;
+    width: 800px;
     height: 800px;
     top: 10%;
-    left: 23%;
+    left: 15%;
     background-image: url("./img/info_2.png");
     background-repeat: no-repeat;
 }
 
 .swiper {
+    position: fixed;
     width: 300px;
     height: 650px;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
-    margin-right: -35%;
+    margin-left: 60%;
 }
 .swiper-slide {                         /*슬라이드 이미지 설정*/       
     background-position: center;
