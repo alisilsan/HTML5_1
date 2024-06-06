@@ -16,26 +16,26 @@
  <div id="result">
     <p id="scoreDisplay">Your IQ Score: </p>
     <span>흠... 머리쓰시는게 조금 힘드시겠군요...</span>
-    <!--모달 팝업-->
-    <div class="modal">
-        <div class="modal_popup">
-            <div>
-                <h3>링크복사 창</h3>
-                <input type="text" id="urlInput" class="urlInput" value="" />
-                <button type="button" class="copy-btn" onclick="copyUrl()">링크 복사</button>
-                <button type="button" class="close_btn">닫기</button>
-                <button type="button" class="refresh_btn">처음으로 이동</button>
-                <button type="button" class="reset_btn">홈으로 이동</button>
-            </div>
+</div>
+<!--모달 팝업-->
+<div class="modal">
+    <div class="modal_popup">
+        <div>
+            <h3>링크복사 창</h3>
+            <input type="text" id="urlInput" class="urlInput" value="" />
+            <button type="button" class="copy-btn" onclick="copyUrl()">링크 복사</button>
+            <button type="button" class="close_btn">닫기</button>
+            <button type="button" class="refresh_btn">처음으로 이동</button>
+            <button type="button" class="reset_btn">홈으로 이동</button>
         </div>
     </div>
-    <!--end 모달 팝업-->
-    <main>
-        <section>
-            <button type="button" class="modal_btn">클릭시 팝업</button>
-        </section>
-    </main>
 </div>
+<!--end 모달 팝업-->
+<main>
+    <section>
+        <button type="button" class="modal_btn">클릭시 팝업</button>
+    </section>
+</main>
 <script src="iq_modal.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
