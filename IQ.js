@@ -74,9 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('iqScore', score); // 점수를 localStorage에 저장
 
         // 결과에 따라 다른 HTML로 이동
-        if (score >= 130 && score <= 100) {
+        if (score <= 130 && score >= 100) {
             window.location.href = `./iq_result/high_iq_result.html`;
-        } else if (score >= 99 && score <= 51) {
+        } else if (score <= 99 && score >= 51) {
             window.location.href = `./iq_result/medium_iq_result.html`;
         } else {
             window.location.href = `./iq_result/low_iq_result.html`;

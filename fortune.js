@@ -18,7 +18,7 @@ $(document).ready(function() {
         setTimeout(function() {
             $('.fortuneSecondimage').fadeOut(500); // 임시 포춘쿠키 이미지 사라짐
             // 랜덤으로 운세 쪽지 출력
-            var fortunes = ['./img/text1.png', './img/text2.png', './img/text3.png', './img/text4.png', './img/text5.png'];
+            var fortunes = ['./img/text1.jpg', './img/text2.jpg', './img/text3.jpg', './img/text4.jpg', './img/text5.jpg', './img/text6.jpg'];
             var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
             $('<img src="' + randomFortune + '" alt="Fortune" class="randomFortune">').appendTo('body').fadeOut(0).fadeIn(3000); // randomfortune 클래스명 추가
             setTimeout(function() {
