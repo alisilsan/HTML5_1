@@ -87,18 +87,6 @@ body::before {
     transform: translate(-50%, 0); /* 수평으로만 중앙 정렬 */
 }
 
-
-/* .폭죽배경 {
-    background: url("./img/연기.gif") no-repeat center center;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-} */
-
 .randomFortune {
     position: fixed;
     top: 50%;

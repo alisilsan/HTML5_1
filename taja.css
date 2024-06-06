@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+.cute-font-regular {
+    font-family: "Cute Font", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*{
+    font-family: "Cute Font", sans-serif;
+}
+
 :root{
     --background-image: url(./img/타자배경.png);
     --background-opacity: 0.7;
@@ -19,7 +31,6 @@
   }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
