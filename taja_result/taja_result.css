@@ -55,16 +55,16 @@ body {
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
-    top: -5%; 
-    left: 35%;
+    top: 7%; 
+    left: 37%;
 }
 #medium_result_img{
     position: absolute;
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
-    top: 10%; 
-    left: 20%;
+    top: 19%; 
+    left: 43%;
 }
 
 #low_result_img{
@@ -73,7 +73,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     top: 20%; 
-    left: 40%;
+    left: 43%;
 }
 
 #final-result{

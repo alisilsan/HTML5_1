@@ -211,3 +211,11 @@ h3 {
   font-family: sans-serif;
   text-align: center;
 }
+.urlInput {
+  font-family: sans-serif;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-60%);
+}
